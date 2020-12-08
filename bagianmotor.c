@@ -87,8 +87,9 @@ void motor(int kecamatan, int wisata, int edukasi, int konservasi, int religi, i
         printf("salah!");
 }
 /* 10 fungsi dibawah adalah untuk mengeksekusi perkiraan bensin yang akan diperlukan dari asal 
-ke tujuan wisata dengan menggunakan rumus( jarak/jarak(perliter))*2 angka 2 adalah untuk
+ke tujuan wisata dengan menggunakan rumus( jarak*2/jarak(perliter) angka 2 adalah untuk
 menghitung jarak bolak-balik*/
+/*jika jarak terlalu dekat dan kurang dari pembagi, maka otomatis akan dihitung 1 liter*/
 /*untuk jarak dari asal ke tujuan belum di upgrade siswa secara keseluruhan, dan masih dalam tahap
 pengumpulan data*/
 /*mobil jarak(kategori) untuk menghitung jika menggukan mobil, motor jarak(kategori) jika menggunakan motor
@@ -105,13 +106,13 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
            switch(edu)//kecamatan 1 itu abiansemal
            {
                case 1://bajra sandhi
-                   return (13/19)*2;//angka 13 adalah jarak dari kecamatan 1 dengan tujuan dengan kategori edukasi
+                   return 14*2/19;//angka 13 adalah jarak dari kecamatan 1 dengan tujuan dengan kategori edukasi
                    break;//19 adalah jarak yang dihabiskan mobil untuk satu liter
                case 2://kertha gosa
-                   return (31/19)*2;
+                   return 31*2/19;
                    break;
                case 3://geopark, batur
-                   return (43/19)*2;
+                   return 43*2/19;
                    break;
                default:
                 break;
@@ -121,14 +122,14 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
          switch(edu)
          {
              case 1:
-                   return (43/19)*2;//bajra sandhi
+                   return 11*2/19;//bajra sandhi
                    break;
                case 2:
-                  return 40/19;//kertha gosa
+                  return 42*2/19;//kertha gosa
                 
                    break;
                case 3:
-                  return 40/19;//geopark
+                  return 69*2/19;//geopark
                    break;
 
                default:
@@ -139,15 +140,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                 case 1:
-                   return 40/19;
+                   return 38*2/19;//bajra sandhi
                   
                    break;
                case 2:
-                   return (49/19)*2;
+                   return 47*2/19;
                   
                    break;
                case 3:
-                   return (49/19)*2;
+                   return 75*2/19;
                   
                    break;
 
@@ -159,15 +160,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 12*2/19;//jaraknya 12 km, langsung dikali 2
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 37*2/19;
                   
                    break;
                case 3:
-                   return (49/19);
+                   return 58*2/19;
                   
                    break;
 
@@ -179,15 +180,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 20*2/19;
                   
                    break;
                case 2:
-                   return 10/5;
+                   return 38*2/19;
                   
                    break;
                case 3:
-                   return (49/19)*2;
+                   return 48*2/19;
                   
                    break;
 
@@ -199,15 +200,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 20*2/19;
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 51*2/19;
                   
                    break;
                case 3:
-                   return (49/19);
+                   return 38*2/19;
                   
                    break;
 
@@ -219,15 +220,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                   case 1:
-                   return 40/19;
+                   return 1;
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 31*2/19;
                   
                    break;
                case 3:
-                   return (49/19);
+                   return 50*2/19;
                   
                    break;
                default:
@@ -239,15 +240,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 1;
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 34*2/19;
                   
                    break;
                case 3:
-                   return(49/19);
+                   return 60*2/19;
                   
                    break;
                default:
@@ -258,16 +259,16 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 1;//return satu karena jarak antara asal
+                   //dan tujuan dekat 
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 32*2/19;
                   
                    break;
                case 3:
-                   return (49/19);
-                  
+                   return 59*2/19;                 
                    break;
                default:
                 break;
@@ -277,15 +278,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 1;
                   
                    break;
                case 2:
-                   return 40/19;;
+                   return 27*2/19;
                   
                    break;
                case 3:
-                   return (49/19);
+                   return 54*2/19;
                   
                    break;
                default:
@@ -308,13 +309,13 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
            switch(edu)
            {
                case 1:
-                   return (13/19)*2;
+                   return 1;
                    break;
                case 2:
-                   return (31/19)*2;
+                   return 31*2/37;
                    break;
                case 3:
-                   return (43/19)*2;
+                   return 43*2/37;
                    break;
                default:
                 break;
@@ -324,14 +325,14 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
          switch(edu)
          {
              case 1:
-                   return (43/19)*2;
+                   return 1;
                    break;
                case 2:
-                  return 40/19;
+                  return 42*2/37;
                 
                    break;
                case 3:
-                  return 40/19;
+                  return 69*2/37;
                    break;
 
                default:
@@ -342,15 +343,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                   
                    break;
                case 2:
-                   return (49/19)*2;
+                   return 47*2/37;
                   
                    break;
                case 3:
-                   return (49/19)*2;
+                   return 75*2/37;
                   
                    break;
 
@@ -362,15 +363,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 1;
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 37*2/37;
                   
                    break;
                case 3:
-                   return (49/19);
+                   return 58*2/37;
                   
                    break;
 
@@ -382,15 +383,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 20*2/37;
                   
                    break;
                case 2:
-                   return 10/5;
+                   return 38*2/37;
                   
                    break;
                case 3:
-                   return (49/19)*2;
+                   return 48*2/19;
                   
                    break;
 
@@ -402,15 +403,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 45*2/37;
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 51*2/37;
                   
                    break;
                case 3:
-                   return (49/19);
+                   return 38*2/37;
                   
                    break;
 
@@ -422,15 +423,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                   case 1:
-                   return 40/19;
+                   return 1;
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 31*2/37;
                   
                    break;
                case 3:
-                   return (49/19);
+                   return 50*2/37;
                   
                    break;
                default:
@@ -442,15 +443,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 1;
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 34*2/37;
                   
                    break;
                case 3:
-                   return(49/19);
+                   return 60*2/37;
                   
                    break;
                default:
@@ -461,15 +462,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 1;
                   
                    break;
                case 2:
-                   return (49/19);
+                   return 32*2/37;
                   
                    break;
                case 3:
-                   return (49/19);
+                   return 59*2/37;
                   
                    break;
                default:
@@ -480,15 +481,15 @@ double mobil_jarak_edukasi(int kecamatan, int wisata, int edukasi)
             switch(edu)
             {
                  case 1:
-                   return 40/19;
+                   return 1;
                   
                    break;
                case 2:
-                   return 40/19;;
+                   return 27*2/37;
                   
                    break;
                case 3:
-                   return (49/19);
+                   return 54*2/37;
                   
                    break;
                default:
@@ -513,15 +514,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
            switch(konser)
            {
                case 1://taman nasional bali barat
-                   return 40/19;
+                   return 123*2/19;
                    
                    break;
                case 2:
-                   return 40/19;//kebun raya bedugul
+                   return 39*2/19;//kebun raya bedugul
                    
                    break;
                case 3:
-                   return 40/19;//bali bird parak
+                   return 1;//bali bird parak
                    
                    break;
 
@@ -533,15 +534,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
          switch(konser)
          {
                 case 1:
-                   return 40/19;
+                   return 138*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 58*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 24*2/19;
                    
                    break;
 
@@ -553,15 +554,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 145*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 65*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 29*2/19;
                    
                    break;
                default:
@@ -572,15 +573,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 129*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 25*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 18*2/19;
                    
                    break;
 
@@ -592,15 +593,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 119*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 34*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 14*2/19;
                    
                    break;
                default:
@@ -611,15 +612,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 119*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 21*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 36*2/19;
                    
                    break;
                default:
@@ -630,15 +631,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                   case 1:
-                   return 40/19;
+                   return 127*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 47*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 12*2/19;
                    
                    break;
                default:
@@ -650,15 +651,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                   case 1:
-                   return 40/19;
+                   return 131*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 52*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 14*2/19;
                    
                    break;
                default:
@@ -669,15 +670,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 140*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 59*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 14*2/19;
                    
                    break;
                default:
@@ -688,15 +689,15 @@ double mobil_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 132*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 50*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -721,15 +722,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
            switch(konser)
            {
                case 1:
-                   return 40/19;
+                   return 123*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 39*2/17;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -741,15 +742,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
          switch(konser)
          {
                 case 1:
-                   return 40/19;
+                   return 138*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 58*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 24*2/37;
                    
                    break;
 
@@ -761,15 +762,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 145*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 65*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 29*2/37;
                    
                    break;
                default:
@@ -780,15 +781,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 129*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 50*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -800,15 +801,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 119*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 34*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -819,15 +820,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 119*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 21*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 36*2/37;
                    
                    break;
                default:
@@ -838,15 +839,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                   case 1:
-                   return 40/19;
+                   return 127*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 47*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -858,15 +859,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                   case 1:
-                   return 40/19;
+                   return 131*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 52*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -877,15 +878,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 140*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 59*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -896,15 +897,15 @@ double motor_jarak_konservasi(int kecamatan, int wisata, int konservasi)
             switch(konser)
             {
                 case 1:
-                   return 40/19;
+                   return 132*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 50*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -928,15 +929,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
            switch(rel)
            {
                case 1:
-                   return 40/19;
+                   return 26*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 21*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 33*2/19;
                    
                    break;
 
@@ -948,15 +949,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
          switch(rel)
          {
                 case 1:
-                   return 40/19;
+                   return 50*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 22*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 14*2/19;
                    
                    break;
 
@@ -968,15 +969,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                case 1:
-                   return 40/19;
+                   return 55*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 28*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -988,15 +989,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                 case 1:
-                   return 40/19;
+                   return 42*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 13*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 21*2/19;
                    
                    break;
 
@@ -1008,15 +1009,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                 case 1:
-                   return 40/19;
+                   return 32*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 15*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 37*2/19;
                    
                    break;
 
@@ -1028,15 +1029,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                 case 1:
-                   return 40/19;
+                   return 48*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 46*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 62*2/19;
                    
                    break;
 
@@ -1048,15 +1049,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                  case 1:
-                   return 40/19;
+                   return 34*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 19*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 25*2/19;
                    
                    break;
 
@@ -1069,15 +1070,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                  case 1:
-                   return 40/19;
+                   return 40*2/19 ;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 18*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 20*2/19;
                    
                    break;
 
@@ -1089,15 +1090,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                case 1:
-                   return 40/19;
+                   return 40*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 29*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 17*2/19;
                    
                    break;
 
@@ -1109,15 +1110,15 @@ double mobil_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                 case 1:
-                   return 40/19;
+                   return 33*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 22*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 25*2/19;
                    
                    break;
 
@@ -1142,15 +1143,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
            switch(rel)
            {
                case 1:
-                   return 40/19;
+                   return (26/37)*2;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (21/37)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (33/37)*2;
                    
                    break;
 
@@ -1162,15 +1163,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
          switch(rel)
          {
                 case 1:
-                   return 40/19;
+                   return (50/37)*2;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (22/37)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (14/37)*2;
                    
                    break;
 
@@ -1182,15 +1183,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                case 1:
-                   return 40/19;
+                   return (55/37)*2;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (28/37)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (6/37)*2;
                    
                    break;
 
@@ -1202,15 +1203,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                 case 1:
-                   return 40/19;
+                   return (42/37)*2;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (13/37)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (21/37)*2;
                    
                    break;
 
@@ -1222,15 +1223,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                 case 1:
-                   return 40/19;
+                   return (32/37)*2;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (15/37)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (37/37)*2;
                    
                    break;
 
@@ -1242,15 +1243,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                 case 1:
-                   return 40/19;
+                   return (48/37)*2;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (46/37)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (62/37)*2;
                    
                    break;
 
@@ -1262,15 +1263,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                  case 1:
-                   return 40/19;
+                   return 34*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 19*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 25*2/37;
                    
                    break;
 
@@ -1283,15 +1284,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                  case 1:
-                   return 40/19;
+                   return 40*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 20*2/37;
                    
                    break;
 
@@ -1303,15 +1304,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                case 1:
-                   return 40/19;
+                   return 40*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 24*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -1323,15 +1324,15 @@ double motor_jarak_religi(int kecamatan, int wisata, int religi)
             switch(rel)
             {
                 case 1:
-                   return 40/19;
+                   return 33*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 22*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 25*2/37;
                    
                    break;
 
@@ -1356,15 +1357,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
            switch(pan)
            {
                case 1:
-                   return 40/19;
+                   return (21/19)*2;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (68/19)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (21/19)*2;
                    
                    break;
 
@@ -1376,15 +1377,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
          switch(pan)
          {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (87/19)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (12/19)*2;
                    
                    break;
                default:
@@ -1395,15 +1396,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (94/19)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (18/19)*2;
                    
                    break;
                default:
@@ -1414,15 +1415,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (79/19)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (19/19)*2;
                    
                    break;
                default:
@@ -1433,15 +1434,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                  case 1:
-                   return 40/19;
+                   return (24/19)*2;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (63/19)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (27/19)*2;
                    
                    break;
 
@@ -1453,15 +1454,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                 case 1:
-                   return 40/19;
+                   return (50/19)*2;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return (50/19)*2;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return (49/19)*2;
                    
                    break;
 
@@ -1473,15 +1474,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                 case 1:
-                   return 40/19;
+                   return 14*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 76*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 15*2/19;
                    
                    break;
                default:
@@ -1493,15 +1494,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                   case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 81*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 14*2/19;
                    
                    break;
 
@@ -1513,15 +1514,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                case 1:
-                   return 40/19;
+                   return 12*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 89*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -1533,15 +1534,15 @@ double mobil_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                  case 1:
-                   return 40/19;
+                   return 15*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 81*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -1566,15 +1567,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
            switch(pan)
            {
                case 1:
-                   return 40/19;
+                   return 21*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 68*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 21*2/37;
                    
                    break;
 
@@ -1586,15 +1587,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
          switch(pan)
          {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 87*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -1605,15 +1606,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 94*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -1624,15 +1625,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 79*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 19*2/37;
                    
                    break;
                default:
@@ -1643,15 +1644,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                  case 1:
-                   return 40/19;
+                   return 24*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 63*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 27*2/37;
                    
                    break;
 
@@ -1663,15 +1664,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                 case 1:
-                   return 40/19;
+                   return 50*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 50*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 49*2/37;
                    
                    break;
 
@@ -1683,15 +1684,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 76*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -1703,15 +1704,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                   case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 81*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -1723,15 +1724,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 89*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -1743,15 +1744,15 @@ double motor_jarak_pantai(int kecamatan, int wisata, int pantai)
             switch(pan)
             {
                  case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 81*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -1778,15 +1779,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
            switch(shop)
            {
                case 1:
-                   return 40/19;
+                   return 21*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 10*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 11*2/19;
                    
                    break;
 
@@ -1798,15 +1799,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
          switch(shop)
          {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 27*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -1818,15 +1819,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 33*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 16*2/19;
                    
                    break;
                default:
@@ -1837,15 +1838,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 10*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 21*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -1857,15 +1858,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 25*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 16*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 16*2/19;
                    
                    break;
                default:
@@ -1876,15 +1877,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 51*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 38*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 41*2/19;
                    
                    break;
                default:
@@ -1895,15 +1896,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                   case 1:
-                   return 40/19;
+                   return 14*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 15*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -1915,15 +1916,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                   case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 18*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -1934,15 +1935,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 17*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 11*2/19;
                    
                    break;
                default:
@@ -1953,15 +1954,15 @@ double mobil_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 17*2/19;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 11*2/19;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -1987,15 +1988,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
            switch(shop)
            {
                case 1:
-                   return 40/19;
+                   return 21*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -2007,15 +2008,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
          switch(shop)
          {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 27*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -2027,15 +2028,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 33*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -2046,15 +2047,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 21*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
 
@@ -2066,15 +2067,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 25*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -2085,15 +2086,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 51*2/37;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 38*2/37;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 41*2/37;
                    
                    break;
                default:
@@ -2104,15 +2105,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                   case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -2124,15 +2125,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                   case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -2143,15 +2144,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
@@ -2162,15 +2163,15 @@ double motor_jarak_shopping(int kecamatan, int wisata, int shopping)
             switch(shop)
             {
                 case 1:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 2:
-                   return 40/19;
+                   return 1;
                    
                    break;
                case 3:
-                   return 40/19;
+                   return 1;
                    
                    break;
                default:
