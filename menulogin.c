@@ -40,9 +40,9 @@ pilihan:
     gets(psw.nama);
     printf("\n\nmasukkan password       :");
     scanf("%9s", &psw.password);
-    if (strcmp(mhs.psw.nama, psw.nama) != 0)
+    if (strcmp(mhs.psw.nama, psw.nama) != 0)//memanfaatkan string untunk membandingkan dua string apakah sama atau tidak
     {
-        printf("error, masukkan nama dan password anda dengan benar!!!!");
+        printf("error, masukkan nama dan password anda dengan benar!!!!");//menggunakan strcmp bernilai 0 berarti kedua string sama
         goto pilihan;
     }
     else if (strcmp(mhs.psw.password, psw.password) != 0)
