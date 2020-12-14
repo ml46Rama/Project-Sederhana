@@ -2,14 +2,27 @@
 #include <conio.h>
 #include <stdlib.h>
 
+//deklarasi variabel
 int makan,kabupaten,pilihan;
 
 int tempatMakan();
 
+//********************************************************************//
+//***********             Fungsi tempatMakan           ***************//
+//====================================================================//
+// Nama Fungsi: main,int                                              //
+// Input Argumen : int pilihan, tempatmakan                           //
+// Output Argumen: int                                                //
+// Deskripsi     : Menginput kabupaten dan tempat makan               //
+// Versi : 1.0                                      Rev. 1            //
+// Tgl: 07-12-2020                                  Tgl: 15-12-2020   //
+// I Gede Carlo Kresnandaka Agastya-2005551053      -                 //
+//====================================================================//
+
 int main(){
   puts    (" \n============================================================");
   puts    (" \n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-  puts    ("\n:                      Daftar Kabupaten                     :"); //menginput pilihan kategori
+  puts    ("\n:                      Daftar Kabupaten                     :"); //menginput pilihan kabupaten
   puts    ("\n <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
   puts    ("\n ============================================================");
   puts    (" Silahkan Pilih daftar Kabupaten                               ");
@@ -30,6 +43,7 @@ int main(){
   return 0;
 }
 
+//menginput tempat makan 
 int tempatMakan(){
   if(kabupaten==1){
     puts (" ==================================== ");
