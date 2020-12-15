@@ -1,78 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-//deklarasi variabel
-int age,kendaraan;
-char nama[100];
-int asal, tujuan, pilihan;
-
-//fungsi main
+#include <string.h>
 
 //********************************************************************//
-//***********                Fungsi Main               ***************//
+//**************             Fungsi main               ***************//
 //====================================================================//
 // Nama Fungsi: main                                                  //
-// Input Argumen : int age, kendaraan, asal, tujuan, pilihan          //
-// Output Argumen: int  main                                          //
-// Deskripsi     : Menginput data diri, kendaraan, bensin, kategori   //
+// Input Argumen : int main                                           //
+// Output Argumen: -                                                  //
+// Deskripsi     : menampilkan keseluruhan fungsi yang digunakan      //
 // Versi : 1.0                                      Rev. 0            //
-// Tgl: 01-12-2020                                  Tgl: 01-12-2020   //
+// Tgl: 15-12-2020                                  Tgl: 15-12-2020   //
 // I Gede Carlo Kresnandaka Agastya-2005551053      -                 //
 //====================================================================//
-int main()
-{
-    puts (" ============================== ");
-    puts (":           Data Diri          :");  //mengisi data diri
-    puts (" ============================== ");
-    printf("Input Nama: ");
-    scanf("%[^\n]s", nama );
-    printf("Input Umur: ");
-    scanf("%d", &age);
 
-    puts    ("1.mobil");
-    puts    ("2.motor");
-    printf  ("\n jenis kendaraan yang dipakai   :");
-    scanf   ("%d", &kendaraan);
+//ini adalah fungsi main
+int main(){
+//nama struck untuk memanggil setiap pilihan
+feeling fl;
+    program call[10];
+    sewa sw;
+    fl = pilihan_string(fl);          //fungsi untuk memanggil paket atau pribadi
+    fl = tampilan_feeling(fl);        //fungsi untuk menampilkan pilihan
+    fl = pilihan_kabupaten(fl, call); //fungsi untuk memilih kabupaten
+    fl = input_call(fl, call);        //fungsi untuk memilih tempat wisata
+    fl = input_tempatmakan(fl, call); //fungsi untuk memilih tempat makan
+    call[10] = input_data(call);      //array pilihan dari tempat wisata
+    tampilkan(call);                  //tampilan semua tempat wisata yang dipilih
+    sw=nyewamobil(sw);                //fungsi memilih ingin menyewa mobil
+    sw=pilihansewa(sw);               //fungsi memilih mobil
+    sw=jamsewa1(sw);                  //fungsi menghitung harga sewa sesuai jam
+    sw=jamsewa2(sw);                  //fungsi menghitung harga sewa sesuai jam
+    sw=jamsewa3(sw);                  //fungsi menghitung harga sewa sesuai jam
 
-    puts("Masukkan jenis bensin yang anda gunakan   :");
-    puts ("1. PERTALITE ");
-    puts ("2. PERTAMAX");
-    scanf("%d", &pilihan);
-
-
-    puts    ("\n==================================================");
-    puts    ("\n=======pilih di kecamatan mana kamu berada========");
-    puts    ("\n=================================================");   //input asal kecamatan
-    puts    ("\n<<<<<<<<<<Input Hanya bisa dilakukan<<<<<<<<<<<<<<");
-    puts    ("\njika berada di Kabupaten Badung dan Kota Denpasar");
-    printf  ("Input Asal: ");
-    puts    ("\n1.Abiansemal");
-    puts    ("2.Kuta");
-    puts    ("3.Kuta Utara");
-    puts    ("4.Kuta Selatan");
-    puts    ("5.Mengwi");
-    puts    ("6.Petang");
-    puts    ("7.Denpasar Utara");
-    puts    ("8.Denpasar Barat");
-    puts    ("9.Denpasar Selatan");
-    puts    ("10.Denpasar Timur");
-    scanf   ("%d",&asal);
-
-    printf("\nHallo!!  silahkan memilih kategori ya!");
-
-    puts    (" \n=============================================================");
-    puts    (" \n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-    puts    ("\n:                    Daftar Kategori Vacation                :");  //memilih kategori yang diinginkan
-    puts    ("\n <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-    puts    ("\n ==============================================================");
-    puts    (" Silahkan Pilih daftar Kategori                                ");
-    puts    (" Ketik 1  untuk Kategori Edukasi                               ");
-    puts    (" Ketik 2  untuk Kategori Konservasi                            ");
-    puts    (" Ketik 3  untuk kategori Religi                                ");
-    puts    (" Ketik 4  untuk kategori Pantai                                ");
-    puts    (" Ketik 5  untuk kategori Shopping                              ");
-    printf  ("Ketikkan pilihan kategori: ");
-    scanf   ("%d",&tujuan);
-
-return 0;
-}
+    return 0;
+  }
