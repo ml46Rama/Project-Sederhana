@@ -36,7 +36,7 @@ feeling input_pilihan_guide(feeling fl, sewa sw)
     scanf("%c", fl.input_tour_guide);
     if (fl.input_tour_guide == 'Y')
     {
-        
+        sewa_guide(fl,sw);
     }
     else if (fl.input_tour_guide == 'N')
     {
