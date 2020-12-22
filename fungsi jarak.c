@@ -5,6 +5,7 @@ feeling input_jarak(feeling fl, program call[], sewa sw)
         printf("\n anda dapat mengecek di google maps dan sesuaikan dengan kendaraan anda");
         printf("\n masukkan perkiraan jarak tempat anda sekarang ke tujuan :");
         scanf("%f", &fl.jarak);
+        printf("\n1.mobil\n2. motor");
         printf("\n Kendaraan yang di pakai      :");
         scanf("%d", &fl.kendaraan);
         if (fl.kendaraan == 1)
