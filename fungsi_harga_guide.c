@@ -29,22 +29,4 @@ feeling sewa_guide(feeling fl, sewa sw){
         fl.jumlah_sewa=fl.jumlah_guide*fl.jam_guide*20000;
 return fl;
 }
-feeling input_pilihan_guide(feeling fl, sewa sw)
-{
 
-    printf("\nAnda ingin menggunakan tour guide atau tidak?\n Y(yes) N(no)  :");
-    scanf("%c", fl.input_tour_guide);
-    if (fl.input_tour_guide == 'Y')
-    {
-        sewa_guide(fl,sw);
-    }
-    else if (fl.input_tour_guide == 'N')
-    {
-        nyewamobil(sw);
-    }
-    else
-    {
-        printf("hanya pilih Y dan N");
-    }
-    return fl;
-}
