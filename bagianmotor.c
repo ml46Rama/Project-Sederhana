@@ -136,21 +136,39 @@ void view_klungkung(wisata fl)
 }
 void view_gianyar(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai nusa dua   \t 1.beach walk\t     \t 1. pura uluwatu");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|                        TEMPAT-TEMPAT WISATA DI KAB. GIANYAR                          |");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
+    puts("| 1. Pantai Lebih         | 1. Arta Sedana    | 1. GPdl Gianyar   | 1. Taman Nusa      |");
+    puts("| 2. Pantai Siyut         | 2. Manjari        | 2. Pura penataran | 2. LBB Permata     |");
+    puts("|                         |                   |    Pandesidan     |                    |");
+    puts("| 3. Pantai Cucukan       | 3. -              | 3. Bale Tedung    | 3. -               |");
+    puts("+--------------------------------------------------------------------------------------+");
 }
 void view_karangasem(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai nusa dua   \t 1.beach walk\t     \t 1. pura uluwatu");
-}
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|                     TEMPAT-TEMPAT WISATA DI KAB. KARANGASEM                          |");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
+    puts("| 1. Pantai Wates         | 1. Arta Sedana    | 1. Puri Kaleran   | 1. Museum Pustaka  |");
+    puts("|                         |                   |                   |    Lontar          |");
+    puts("| 2. Pantai Bias Tugel    | 2. Dupa Amlapura  | 2. Juuk Manis     | 2. -               |");
+    puts("| 3. Pantai Virgin        | 3. -              | 3. Pemerajan Agung| 3. -               |");
+    puts("|                         |                   |    Batuaya        |                    |");
+    puts("+--------------------------------------------------------------------------------------+");
+}    
 void view_bangli(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai nusa dua   \t 1.beach walk\t     \t 1. pura uluwatu");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|                       TEMPAT-TEMPAT WISATA DI KAB. BANGLI                            |");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
+    puts("| 1. -                    | 1. Bangli Mesari  | 1. Pura Pingit    | 1. Desa Penglipuran|");
+    puts("| 2. -                    | 2. Victory Bali   | 2. Pura penataran | 2. -               |");
+    puts("|                         |                   |    Sangging       |                    |");
+    puts("+--------------------------------------------------------------------------------------+");
 }
 void view_buleleng_barat(wisata fl)
 {
