@@ -168,19 +168,34 @@ void view_bangli(wisata fl)
     puts("| 1. -                    | 1. Bangli Mesari  | 1. Pura Pingit    | 1. Desa Penglipuran|");
     puts("| 2. -                    | 2. Victory Bali   | 2. Pura penataran | 2. -               |");
     puts("|                         |                   |    Sangging       |                    |");
+    puts("| 3. -                    | 3. -              | 3. Pura Kehen     | 3. -               |");
     puts("+--------------------------------------------------------------------------------------+");
 }
 void view_buleleng_barat(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai nusa dua   \t 1.beach walk\t     \t 1. pura uluwatu");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|                   TEMPAT-TEMPAT WISATA DI KAB. Buleleng Barat                        |");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
+    puts("| 1. Pantai Pumeteran     | 1. Hardys         | 1. GKII Gerogak   | 1. -               |");
+    puts("| 2. Pantai Batu Sungu    | 2. Sanchita       | 2. Pura Taman     | 2. -               |");
+    puts("|                         |    Singaraja      |    Swasti         |                    |");
+    puts("| 3. Pantai Umeanyar      | 3. -              | 3. Taman Sari Loka| 3. -               |");
+    puts("|                         |                   |    Paksa          |                    |");
+    puts("+--------------------------------------------------------------------------------------+");
 }
 void view_buleleng_timur(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai nusa dua   \t 1.beach walk\t     \t 1. pura uluwatu");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|                   TEMPAT-TEMPAT WISATA DI KAB. Buleleng Timur                        |");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
+    puts("| 1. Pantai Punjuk Batu   | 1. BREM Singaraja | 1. Griya Tirta    | 1. Museum Buleleng |");
+    puts("| 2. Hidden Beach Giri    | 2. Marmarshopp_   | 2. Pura Sura      | 2. -               |");
+    puts("|    Emas                 |    Singaraja      |    Lepang         |                    |");
+    puts("| 3. Pantai Pemaron       | 3. Krisna         | 3. Pura Lebah     | 3. -               |");
+    puts("|                         |                   |    Suwug          |                    |");
+    puts("+--------------------------------------------------------------------------------------+")
 }
 //==============================================================//
 //nama fungsi   : pilihanan kabupaten                           //
