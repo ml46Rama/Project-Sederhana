@@ -106,33 +106,68 @@ void tampil_login(login psw, sign_up mhs, wisata fl)
 //==============================================================//
 void view_badung(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai nusa dua   \t 1.beach walk\t     \t 1. pura uluwatu");
+    puts("+-------------------------------------------------------------------------------------+");
+    puts("|                      TEMPAT-TEMPAT WISATA DI KAB. BADUNG                            |");
+    puts("+-------------------------------------------------------------------------------------+");
+    puts("|         PANTAI         |       MALL       |        RELIGI       |       EDUKASI     |");
+    puts("| 1. pantai nusa dua     |1. Beach Walk     | 1. Pura Uluwatu     |null               |");
+    puts("| 2. Pantai Melasti      |2. Jalan Legian   | 2. Pura Taman Ayun  |null               |");
+    puts("| 3. Pantai Uluwatu      |3. Discovery      | 3. Pura Puja Mandala|null               |");
+    puts("| 4. Pantai Tegal Wangi  |4. Krisna         |                     |null               |");
+    puts("| 5. Pantai Suluban      |5. Lippo Plaza    |                     |null|              |");
+    puts("+-------------------------------------------------------------------------------------+");
 }
 void view_denpasar(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai kuta        \t 1.mall bali galeria\t \t 1. pura tanah kilap");
+    puts("+-------------------------------------------------------------------------------------+");
+    puts("|                      TEMPAT-TEMPAT WISATA DI KAB.DENPASAR                           |");
+    puts("+-------------------------------------------------------------------------------------+");
+    puts("|         PANTAI        |       MALL       |        RELIGI       |       EDUKASI     |");
+    puts("| 1. pantai padang galak|1. Level 21       |                     |1. Bajra Sandhi    |");
+    puts("| 2. Pantai biaung      |2. TSM            |                     |null               |");
+    puts("| 3. Pantai Tangtu      |3. Kumbasari      |                     |null               |");
+    puts("| 4. Bali beach sanur   |4. sanur market   |                     |null               |");
+    puts("| 5. Pan.matahari terbit|5. dewata oleh2   |                     |null               |");
+    puts("+-------------------------------------------------------------------------------------+");
 }
 void view_tabanan(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai nusa dua   \t 1.beach walk\t     \t 1. pura uluwatu");
+    puts("+-----------------------------------------------------------------------------------------+");
+    puts("|                          TEMPAT-TEMPAT WISATA DI KAB.TABANAN                            |");
+    puts("+-----------------------------------------------------------------------------------------+");
+    puts("|         PANTAI         |       MALL       |        RELIGI       |       EDUKASI     |-----");
+    puts("| 1. pantai beraban      |1. Entil Pupuan   | 1. Pura Ulun Danu   |1.museum subak     |-----");
+    puts("| 2. Pantai kedungu      |2. Pasar Kodok    | 2. Pura Taman Ayun  |2.Kebun Raya       |-----");
+    puts("| 3. Pantai soka         |                  | 3. Pura Alas Kedaton|3.Hutan Monyet     |-----");
+    puts("| 4. Pantai Pasut        |                  |4.Pura Mekori        |4.Puri Anyar Kerambitan |");
+    puts("| 5. Pantai Klecung      |                  |5.Tanah Lot          |5.Taman Pahlawan   |-----");
+    puts("+------------------------------------------------------------------------------------------+");
 }
 void view_jembrana(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai nusa dua   \t 1.beach walk\t     \t 1. pura uluwatu");
+    puts("+---------------------------------------------------------------------------------------------+");
+    puts("|                      TEMPAT-TEMPAT WISATA DI KAB. JEMBRANA                                  |");
+    puts("+----------------------------------------------------------------------------------------------+");
+    puts("|         PANTAI         |       Air Terjun       |        RELIGI       |       EDUKASI        |");
+    puts("| 1. pantai Perancak     |1. Batu Belah           | 1. Pura Rambut Siwi |1.TNBB                |");
+    puts("| 2. Pantai Madewi       |2. Bidadari             | 2. Pura Jati        |2.Museum Manusia Purba|");
+    puts("| 3. Teluk Gilimanuk     |3. Juwuk Manis          | 3. Pura Majapahit   |3.Desa Sangkaragung   |");
+    puts("| 4. Pantai Bakut rening |4. Karang Sew(danau)    |                     |4.Makam Tua           |");
+    puts("| 5. Pantai Delod Berawah|                        |                     |5.Makepung            |");
+    puts("+----------------------------------------------------------------------------------------------+");
 }
 void view_klungkung(wisata fl)
 {
-    puts("\n\t===KATEGORI PANTAI===\t===KATEGORI SHOOPING===\t===KATEGORI RELIGI===\t");
-    puts("\n\t kode kategori :01     \t kode kategori :02\t  \tkode kategori :03");
-    puts("\n\t 1. pantai nusa dua   \t 1.beach walk\t     \t 1. pura uluwatu");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|                      TEMPAT-TEMPAT WISATA DI KAB.KLUNGKUNG                           |");
+    puts("+--------------------------------------------------------------------------------------+");
+    puts("|         PANTAI         |       null         |        RELIGI       |       EDUKASI     |");
+    puts("| 1. dream beach         |1. Pulau Seribu     | 1. Dalem Ped        |1. Angle's Bilabong|");
+    puts("| 2. Pantai Jungut Batu  |2. Hutan Mangrove   | 2. Giri Putri       |2.Bukit Teletubis  |");
+    puts("| 3. Pantai Selambung    |3.Tebing Blue Lagon | 3. Pura Paluang     |3.Tembeling        |");
+    puts("| 4. Mushroom Beach      |4. Klingking Beach  |                     |4.Guyangan Matair  |");
+    puts("| 5. Toya Pakeh          |5. Pantai Banah     |                     |5.Teluk Sebila     |");
+    puts("+-------------------------------------------------------------------------------------+");
 }
 void view_gianyar(wisata fl)
 {
