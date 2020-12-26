@@ -178,7 +178,12 @@ void view_gianyar(wisata fl)
     puts("| 1. Pantai Lebih         | 1. Arta Sedana    | 1. GPdl Gianyar   | 1. Taman Nusa      |");
     puts("| 2. Pantai Siyut         | 2. Manjari        | 2. Pura penataran | 2. LBB Permata     |");
     puts("|                         |                   |    Pandesidan     |                    |");
-    puts("| 3. Pantai Cucukan       | 3. -              | 3. Bale Tedung    | 3. -               |");
+    puts("| 3. Pantai Cucukan       | 3. Pasar          | 3. Bale Tedung    | 3. Butterfly Park  |");
+    puts("|                         |    Tradisional    |                   |   	             |");
+    puts("| 4. Pantai Masceti       | 4. Giftart_Bali   | 4. Musholla Nuruh | 4. Elephant Park   |");
+    puts("|                         |                   |    Hikmah         |                    |");
+    puts("| 5. Pantai Purnama       | 5. Blink          | 5. Merajan Ageng  | 5. Keramas Park    |");
+    puts("|                         |                   |    Arya Pering    |                    |");
     puts("+--------------------------------------------------------------------------------------+");
 }
 void view_karangasem(wisata fl)
@@ -189,22 +194,29 @@ void view_karangasem(wisata fl)
     puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
     puts("| 1. Pantai Wates         | 1. Arta Sedana    | 1. Puri Kaleran   | 1. Museum Pustaka  |");
     puts("|                         |                   |                   |    Lontar          |");
-    puts("| 2. Pantai Bias Tugel    | 2. Dupa Amlapura  | 2. Juuk Manis     | 2. -               |");
-    puts("| 3. Pantai Virgin        | 3. -              | 3. Pemerajan Agung| 3. -               |");
-    puts("|                         |                   |    Batuaya        |                    |");
+    puts("| 2. Pantai Bias Tugel    | 2. Dupa Amlapura  | 2. Juuk Manis     | 2. Charly's        |");
+    puts("|                         |                   |                   |    ChocolateFactory|");
+    puts("| 3. Pantai Virgin        | 3. Clandys        | 3. Pemerajan Agung| 3. Puri Agung      |");
+    puts("|                         |                   |    Batuaya        |    Karangasem      |");
+    puts("| 4. Pantai Yeh Malet     | 4. Cahaya Wirama  | 4. Masjid         | 4. Desa Tengenan   |");
+    puts("| 5. Pantai Samuh         | 5. Pasar Sibetan  | 5. GKPB Philia    | 5. -               |");
     puts("+--------------------------------------------------------------------------------------+");
 }    
 void view_bangli(wisata fl)
 {
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|                       TEMPAT-TEMPAT WISATA DI KAB. BANGLI                            |");
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
-    puts("| 1. -                    | 1. Bangli Mesari  | 1. Pura Pingit    | 1. Desa Penglipuran|");
-    puts("| 2. -                    | 2. Victory Bali   | 2. Pura penataran | 2. -               |");
-    puts("|                         |                   |    Sangging       |                    |");
-    puts("| 3. -                    | 3. -              | 3. Pura Kehen     | 3. -               |");
-    puts("+--------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------+");
+    puts("|                       TEMPAT-TEMPAT WISATA DI KAB. BANGLI                             |");
+    puts("+---------------------------------------------------------------------------------------+");
+    puts("|        Air Terjun       |       MALL        |       RELIGI       |      EDUKASI       |");
+    puts("| 1. Tibumana             | 1. Bangli Mesari  | 1. Pura Pingit     | 1. Desa Penglipuran|");
+    puts("| 2. Tegunungan           | 2. Victory Bali   | 2. Pura penataran  | 2. Museum Geopark  |");
+    puts("|                         |                   |    Sangging        |    Batur           |");
+    puts("| 3. Air Terjun Kuning    | 3. Pande Busana   | 3. Pura Kehen      | 3. Ayodya Oemah    |");
+    puts("|                         |                   |                    |    Stawberry       |");
+    puts("| 4. Pengibul             | 4. Randy Sejahtera| 4. Pura Ulun Suwi  | 4. Puri Kilian     |");
+    puts("|                         |                   |    Subak           |                    |");
+    puts("| 5. Bangkiang Djaran     | 5. Kidul Market   | 5. Pura Pengrubugan| 5. -               |");
+    puts("+---------------------------------------------------------------------------------------+");
 }
 void view_buleleng_barat(wisata fl)
 {
@@ -215,8 +227,12 @@ void view_buleleng_barat(wisata fl)
     puts("| 1. Pantai Pumeteran     | 1. Hardys         | 1. GKII Gerogak   | 1. -               |");
     puts("| 2. Pantai Batu Sungu    | 2. Sanchita       | 2. Pura Taman     | 2. -               |");
     puts("|                         |    Singaraja      |    Swasti         |                    |");
-    puts("| 3. Pantai Umeanyar      | 3. -              | 3. Taman Sari Loka| 3. -               |");
+    puts("| 3. Pantai Umeanyar      | 3. Pasar Seririt  | 3. Taman Sari Loka| 3. -               |");
     puts("|                         |                   |    Paksa          |                    |");
+    puts("| 4. Pantai Tanggu Wisia  | 4. Pasar Banyuatis| 4. Pura Puseh     | 4. -               |");
+    puts("|                         |                   |    Bestala        |                    |");
+    puts("| 5. Pantai Gili Putih    | 5. Toko suda      | 5. Pura Tepi      | 5. -               |");
+    puts("|    Sumber Kima          |    Aditya         |    Siring         |                    |");
     puts("+--------------------------------------------------------------------------------------+");
 }
 void view_buleleng_timur(wisata fl)
@@ -226,11 +242,15 @@ void view_buleleng_timur(wisata fl)
     puts("+--------------------------------------------------------------------------------------+");
     puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
     puts("| 1. Pantai Punjuk Batu   | 1. BREM Singaraja | 1. Griya Tirta    | 1. Museum Buleleng |");
-    puts("| 2. Hidden Beach Giri    | 2. Marmarshopp_   | 2. Pura Sura      | 2. -               |");
-    puts("|    Emas                 |    Singaraja      |    Lepang         |                    |");
-    puts("| 3. Pantai Pemaron       | 3. Krisna         | 3. Pura Lebah     | 3. -               |");
-    puts("|                         |                   |    Suwug          |                    |");
-    puts("+--------------------------------------------------------------------------------------+")
+    puts("| 2. Hidden Beach Giri    | 2. Marmarshopp_   | 2. Pura Sura      | 2. Museum Gedong   |");
+    puts("|    Emas                 |    Singaraja      |    Lepang         |    Kirtya          |");
+    puts("| 3. Pantai Pemaron       | 3. Krisna         | 3. Pura Lebah     | 3. Museum Sundal   |");
+    puts("|                         |                   |    Suwug          |    Ketjil          |");
+    puts("| 4. Pantai Kerobokan     | 4. Pasar Banyuning| 4. Seng Hong Bio  | 4. Puri Agung      |");
+    puts("|                         |                   |                   |    Singaraja       |");
+    puts("| 5. Pantai Batu Sugu     | 5. DewaDewi       | 5. Musholla       | 5. -               |");
+    puts("|                         |    Collection     |    Babusallam     |                    |");
+    puts("+--------------------------------------------------------------------------------------+");
 }
 //==============================================================//
 //nama fungsi   : pilihanan kabupaten                           //
