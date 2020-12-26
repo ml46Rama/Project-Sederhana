@@ -114,7 +114,7 @@ void view_badung(wisata fl)
     puts("| 1. Pantai Nusa Dua           | 1. Beach Walk                | 1. Pura Uluwatu              | 1. Agrowisata Sutera SS      |");
     puts("| 2. Pantai Melasti            | 2. Jalan Legian              | 2. Pura Taman Ayun           | 2. House of Alaia Studio     |");
     puts("| 3. Pantai Uluwatu            | 3. Discovery                 | 3. Pura Puja Mandala         | 3. Dream Studio Zone         |");
-    puts("| 4. Pantai Tegal Wangi        | 4. Krisna                    | 4. Masjid Agung Palapa       | 4.	Garuda Wisnu Kencana      |");
+    puts("| 4. Pantai Tegal Wangi        | 4. Krisna                    | 4. Masjid Agung Palapa       | 4. Garuda Wisnu Kencana      |");
     puts("| 5. Pantai Suluban            | 5. Lippo Plaza               | 5. GKPB Jemaat Yudea         | 5. Workshop Jenggala Keramik |");
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
@@ -171,7 +171,7 @@ void view_klungkung(wisata fl)
     puts("| 2. Pantai Jungut Batu        | 2. Pasar Endek               | 2. Pura Giri Putri           | 2. Bukit Teletubbis          |");
     puts("| 3. Pantai Selambung          | 3. Pasar Galiran             | 3. Pura Paluang              | 3. Taman Kertha Gosa         |");
     puts("| 4. Mushroom Beach            | 4. Bintang Oleh-oleh         | 4. Pura Watu Klotok          | 4. Museum Nyoman Gunarsa     |");
-    puts("| 5. Toya Pakeh                | 5. -                         | 5. Masjid Nurul Huda         | 5. Museum Semarajaya         |");
+    puts("| 5. Toya Pakeh Beach          | 5. -                         | 5. Masjid Nurul Huda         | 5. Museum Semarajaya         |");
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_gianyar(wisata fl)
@@ -181,11 +181,11 @@ void view_gianyar(wisata fl)
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
     puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
-    puts("| 1. Pantai Lebih              | 1. Arta Sedana               | 1. GPdl Gianyar              | 1. Taman Nusa                |");
-    puts("| 2. Pantai Siyut              | 2. Manjari                   | 2. Pura Penataran Pandesidan | 2. LBB Permata               |");
-    puts("| 3. Pantai Cucukan            | 3. Pasar Tradisional         | 3. Bale Tedung               | 3. Butterfly Park            |");
-    puts("| 4. Pantai Masceti            | 4. Giftart_Bali              | 4. Musholla Nuruh Hikmah     | 4. Elephant Park             |");
-    puts("| 5. Pantai Purnama            | 5. Blink                     | 5. Merajan Ageng Arya Pering | 5. Keramas Park              |");
+    puts("| 1. Pantai Lebih              | 1. Arta Sedana               | 1. Pura Goa Lawah            | 1. Taman Nusa                |");
+    puts("| 2. Pantai Siyut              | 2. Manjari                   | 2. Pura Goa Gajah            | 2. Museum Gedong Arca        |");
+    puts("| 3. Pantai Cucukan            | 3. Pasar Tradisional         | 3. Pura Penataran Sasih      | 3. Museum Puri Lukisan       |");
+    puts("| 4. Pantai Masceti            | 4. Giftart_Bali              | 4. Pura Tirta Empul          | 4. The Sukarno Center        |");
+    puts("| 5. Pantai Purnama            | 5. Blink                     | 5. Pura Gunung Kawi          | 5. Kemenuh Butterfly Park    |");
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_karangasem(wisata fl)
@@ -209,11 +209,11 @@ void view_bangli(wisata fl)
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
     puts("|          AIR TERJUN          |           SHOPPING           |            RELIGI            |             EDUKASI          |");
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
-    puts("| 1. Tibumana                  | 1. Bangli Mesari             | 1. Pura Pingit               | 1. Desa Penglipuran          |");
-    puts("| 2. Tegunungan                | 2. Victory Bali              | 2. Pura Penataran Sangging   | 2. Museum Geopark Batur      |");
+    puts("| 1. Air Terjun Tibumana       | 1. Bangli Mesari             | 1. Pura Pingit               | 1. Desa Penglipuran          |");
+    puts("| 2. Air Terjun Tegunungan     | 2. Victory Bali              | 2. Pura Penataran Sangging   | 2. Museum Geopark Batur      |");
     puts("| 3. Air Terjun Kuning         | 3. Pande Busana              | 3. Pura Kehen                | 3. Ayodya Oemah Strawberry   |");
-    puts("| 4. Pengibul                  | 4. Randy Sejahtera           | 4. Pura Ulun Suwi Subak      | 4. Puri Kilian               |");
-    puts("| 5. Bangkiang Djaran          | 5. Kidul Market              | 5. Pura Pengrubugan          | 5. -                         |");
+    puts("| 4. Air Terjun Pengibul       | 4. Randy Sejahtera           | 4. Pura Ulun Suwi Subak      | 4. Puri Kilian               |");
+    puts("| 5. Bangkiang Djaran Waterfall| 5. Kidul Market              | 5. Pura Pengrubugan          | 5. -                         |");
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_buleleng_barat(wisata fl)
@@ -223,9 +223,9 @@ void view_buleleng_barat(wisata fl)
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
     puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
-    puts("| 1. Pantai Pumeteran          | 1. Hardys                    | 1. GKII Gerogak              | 1. -                         |");
-    puts("| 2. Pantai Batu Sungu         | 2. Sanchita Singaraja        | 2. Pura Taman Swasti         | 2. -                         |");
-    puts("| 3. Pantai Umeanyar           | 3. Pasar Seririt             | 3. Taman Sari Loka Paksa     | 3. -                         |");
+    puts("| 1. Pantai Pumeteran          | 1. Hardys                    | 1. GKII Gerogak              | 1. Turtle Hatchery Project   |");
+    puts("| 2. Pantai Batu Sungu         | 2. Sanchita Singaraja        | 2. Pura Taman Swasti         | 2. Gran Surya Waterpark      |");
+    puts("| 3. Pantai Umeanyar           | 3. Pasar Seririt             | 3. Taman Sari Loka Paksa     | 3. Perkebunan Anggur Rakyat  |");
     puts("| 4. Pantai Tanggu Wisia       | 4. Pasar Banyuatis           | 4. Pura Puseh Bestala        | 4. -                         |");
     puts("| 5. Pantai Gili Putih         | 5. Toko Suda Aditya          | 5. Pura Tepi Siring          | 5. -                         |");
     puts("+---------------------------------------------------------------------------------------------------------------------------+");
