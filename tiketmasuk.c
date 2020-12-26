@@ -189,28 +189,34 @@ int tiket_masuk(){
             if(kode_wisata == 1 || kode_wisata == 2 || kode_wisata == 3 || kode_wisata == 4 || kode_wisata == 5)
                 return 0;
         }else if(kategori == 3){
-            if(kode_wisata == 1 || kode_wisata == 2 || kode_wisata == 3 || kode_wisata == 4 || kode_wisata == 5)
+            if(kode_wisata == 1 || kode_wisata == 2)
+                return 15000;
+            else if (kode_wisata == 3)
                 return 0;
+            else if(kode_wisata == 4){
+                if(umur > 0 && umur < 17)
+                    return 25000;
+                else
+                    return 30000;
+            }else if(kode_wisata == 5)
+                return 30000;
         }else if(kategori == 4){
             if(kode_wisata == 1)
                 return 85000;
             else if(kode_wisata == 2)
                 return 0;
-            else if(kode_wisata == 3){
+            else if(kode_wisata == 3)
+                return 0;
+            else if(kode_wisata == 4){
+                if(umur > 0 && umur < 17)
+                    return 10000;
+                else
+                    return 20000;
+            }else if(kode_wisata == 5){
                 if(umur > 0 && umur < 17)
                     return 22000;
                 else
                     return 37400;
-            }else if(kode_wisata == 4){
-                if(umur > 0 && umur < 17)
-                    return 390000;
-                else
-                    return 575000;
-            }else if(kode_wisata == 5){
-                if(umur > 0 && umur < 17)
-                    return 15000;
-                else
-                    return 30000;
             }
         }
     }
@@ -273,8 +279,10 @@ int tiket_masuk(){
             if(kode_wisata == 1 || kode_wisata == 2 || kode_wisata == 3 || kode_wisata == 4 || kode_wisata == 5)
                 return 0;
         }else if(kategori == 4){
-            if(kode_wisata == 1 || kode_wisata == 2 || kode_wisata == 3 || kode_wisata == 4 || kode_wisata == 5)
+            if(kode_wisata == 1 || kode_wisata == 3 || kode_wisata == 4 || kode_wisata == 5)
                 return 0;
+            else if(kode_wisata == 2)
+                return 50000;
         }
     }
     else if(kabupaten == 10){ //Kabupaten Buleleng Timur
