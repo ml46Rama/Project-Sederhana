@@ -106,151 +106,143 @@ void tampil_login(login psw, sign_up mhs, wisata fl)
 //==============================================================//
 void view_badung(wisata fl)
 {
-    puts("+-------------------------------------------------------------------------------------+");
-    puts("|                      TEMPAT-TEMPAT WISATA DI KAB. BADUNG                            |");
-    puts("+-------------------------------------------------------------------------------------+");
-    puts("|         PANTAI         |       MALL       |        RELIGI       |       EDUKASI     |");
-    puts("| 1. pantai nusa dua     |1. Beach Walk     | 1. Pura Uluwatu     |null               |");
-    puts("| 2. Pantai Melasti      |2. Jalan Legian   | 2. Pura Taman Ayun  |null               |");
-    puts("| 3. Pantai Uluwatu      |3. Discovery      | 3. Pura Puja Mandala|null               |");
-    puts("| 4. Pantai Tegal Wangi  |4. Krisna         |                     |null               |");
-    puts("| 5. Pantai Suluban      |5. Lippo Plaza    |                     |null|              |");
-    puts("+-------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                         TEMPAT-TEMPAT WISATA DI KABUPATEN BADUNG                                          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Pantai Nusa Dua           | 1. Beach Walk                | 1. Pura Uluwatu              | 1. Agrowisata Sutera SS      |");
+    puts("| 2. Pantai Melasti            | 2. Jalan Legian              | 2. Pura Taman Ayun           | 2. House of Alaia Studio     |");
+    puts("| 3. Pantai Uluwatu            | 3. Discovery                 | 3. Pura Puja Mandala         | 3. Dream Studio Zone         |");
+    puts("| 4. Pantai Tegal Wangi        | 4. Krisna                    | 4. Masjid Agung Palapa       | 4.	Garuda Wisnu Kencana      |");
+    puts("| 5. Pantai Suluban            | 5. Lippo Plaza               | 5. GKPB Jemaat Yudea         | 5. Workshop Jenggala Keramik |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_denpasar(wisata fl)
 {
-    puts("+-------------------------------------------------------------------------------------+");
-    puts("|                      TEMPAT-TEMPAT WISATA DI KAB.DENPASAR                           |");
-    puts("+-------------------------------------------------------------------------------------+");
-    puts("|         PANTAI        |       MALL       |        RELIGI       |       EDUKASI     |");
-    puts("| 1. pantai padang galak|1. Level 21       |                     |1. Bajra Sandhi    |");
-    puts("| 2. Pantai biaung      |2. TSM            |                     |null               |");
-    puts("| 3. Pantai Tangtu      |3. Kumbasari      |                     |null               |");
-    puts("| 4. Bali beach sanur   |4. sanur market   |                     |null               |");
-    puts("| 5. Pan.matahari terbit|5. dewata oleh2   |                     |null               |");
-    puts("+-------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                         TEMPAT-TEMPAT WISATA DI KOTA DENPASAR                                             |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Pantai Padang Galak       | 1. Level 21 Mall             | 1. Pura Agung Jagatnatha     | 1. Monumen Bajra Sandhi      |");
+    puts("| 2. Pantai Biaung             | 2. Trans Studio Mall         | 2. Pura Tanah Kilap          | 2. Museum Bung Karno         |");
+    puts("| 3. Pantai Tangtu             | 3. Pasar Kumbasari           | 3. Klenteng Bei Ji Gong      | 3. Museum Bali               |");
+    puts("| 4. Pantai Sanur              | 4. Sanur Market              | 4. Masjid Al Muawanah        | 4. BKSDA Bali                |");
+    puts("| 5. Pantai Matahari Terbit    | 5. Dewata Oleh-oleh          | 5. Gereja Katolik Roh Kudus  | 5. Museum Le Mayeur          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_tabanan(wisata fl)
 {
-    puts("+-----------------------------------------------------------------------------------------+");
-    puts("|                          TEMPAT-TEMPAT WISATA DI KAB.TABANAN                            |");
-    puts("+-----------------------------------------------------------------------------------------+");
-    puts("|         PANTAI         |       MALL       |        RELIGI       |       EDUKASI     |-----");
-    puts("| 1. pantai beraban      |1. Entil Pupuan   | 1. Pura Ulun Danu   |1.museum subak     |-----");
-    puts("| 2. Pantai kedungu      |2. Pasar Kodok    | 2. Pura Taman Ayun  |2.Kebun Raya       |-----");
-    puts("| 3. Pantai soka         |                  | 3. Pura Alas Kedaton|3.Hutan Monyet     |-----");
-    puts("| 4. Pantai Pasut        |                  |4.Pura Mekori        |4.Puri Anyar Kerambitan |");
-    puts("| 5. Pantai Klecung      |                  |5.Tanah Lot          |5.Taman Pahlawan   |-----");
-    puts("+------------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                         TEMPAT-TEMPAT WISATA DI KABUPATEN TABANAN                                         |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Pantai Beraban            | 1. Pasar Kodok               | 1. Pura Ulun Danu            | 1. Museum Subak              |");
+    puts("| 2. Pantai Bedungu            | 2. Joger Baturiti            | 2. Pura Luhur Batukaru       | 2. Kebun Raya Bedugul        |");
+    puts("| 3. Pantai Boka               | 3. Pasar Senggol             | 3. Pura Alas Kedaton         | 3. Hutan Monyet              |");
+    puts("| 4. Pantai Pasut              | 4. Mall Kampoeng Lot         | 4. Pura Mekori               | 4. Puri Anyar Kerambitan     |");
+    puts("| 5. Pantai Klecung            | 5. Matahari Duta Plaza       | 5. Pura Tanah Lot            | 5. Taman Pahlawan            |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_jembrana(wisata fl)
 {
-    puts("+---------------------------------------------------------------------------------------------+");
-    puts("|                      TEMPAT-TEMPAT WISATA DI KAB. JEMBRANA                                  |");
-    puts("+----------------------------------------------------------------------------------------------+");
-    puts("|         PANTAI         |       Air Terjun       |        RELIGI       |       EDUKASI        |");
-    puts("| 1. pantai Perancak     |1. Batu Belah           | 1. Pura Rambut Siwi |1.TNBB                |");
-    puts("| 2. Pantai Madewi       |2. Bidadari             | 2. Pura Jati        |2.Museum Manusia Purba|");
-    puts("| 3. Teluk Gilimanuk     |3. Juwuk Manis          | 3. Pura Majapahit   |3.Desa Sangkaragung   |");
-    puts("| 4. Pantai Bakut rening |4. Karang Sew(danau)    |                     |4.Makam Tua           |");
-    puts("| 5. Pantai Delod Berawah|                        |                     |5.Makepung            |");
-    puts("+----------------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                           TEMPAT-TEMPAT WISATA DI KABUPATEN JEMBRANA                                      |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|            PANTAI            |         AIR TERJUN           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Pantai Perancak           | 1. Air Terjun Batu Belah     | 1. Pura Rambut Siwi          | 1. Taman Nasional Bali Barat |");
+    puts("| 2. Pantai Madewi             | 2. Air Terjun Bidadari       | 2. Pura Jati                 | 2. Museum Manusia Purba      |");
+    puts("| 3. Teluk Gilimanuk           | 3. Air Terjun Juwuk Manis    | 3. Pura Majapahit            | 3. Desa Sangkaragung         |");
+    puts("| 4. Pantai Bakut Rening       | 4. Air Terjun Grojogan       | 4. Pura Gede Perancak        | 4. Makam Tua                 |");
+    puts("| 5. Pantai Delod Berawah      | 5. Air Terjun Nusamara       | 5. Klenteng Cung Ling Bio    | 5. Taman Prasasti            |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_klungkung(wisata fl)
 {
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|                      TEMPAT-TEMPAT WISATA DI KAB.KLUNGKUNG                           |");
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|         PANTAI         |       null         |        RELIGI       |       EDUKASI     |");
-    puts("| 1. dream beach         |1. Pulau Seribu     | 1. Dalem Ped        |1. Angle's Bilabong|");
-    puts("| 2. Pantai Jungut Batu  |2. Hutan Mangrove   | 2. Giri Putri       |2.Bukit Teletubis  |");
-    puts("| 3. Pantai Selambung    |3.Tebing Blue Lagon | 3. Pura Paluang     |3.Tembeling        |");
-    puts("| 4. Mushroom Beach      |4. Klingking Beach  |                     |4.Guyangan Matair  |");
-    puts("| 5. Toya Pakeh          |5. Pantai Banah     |                     |5.Teluk Sebila     |");
-    puts("+-------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                            TEMPAT-TEMPAT WISATA DI KABUPATEN KLUNGKUNG                                    |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Dream Beach               | 1. Pasar Rakyat Semarapura   | 1. Pura Dalem Ped            | 1. Angle's Bilabong          |");
+    puts("| 2. Pantai Jungut Batu        | 2. Pasar Endek               | 2. Pura Giri Putri           | 2. Bukit Teletubbis          |");
+    puts("| 3. Pantai Selambung          | 3. Pasar Galiran             | 3. Pura Paluang              | 3. Taman Kertha Gosa         |");
+    puts("| 4. Mushroom Beach            | 4. Bintang Oleh-oleh         | 4. Pura Watu Klotok          | 4. Museum Nyoman Gunarsa     |");
+    puts("| 5. Toya Pakeh                | 5. -                         | 5. Masjid Nurul Huda         | 5. Museum Semarajaya         |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_gianyar(wisata fl)
 {
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|                        TEMPAT-TEMPAT WISATA DI KAB. GIANYAR                          |");
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
-    puts("| 1. Pantai Lebih         | 1. Arta Sedana    | 1. GPdl Gianyar   | 1. Taman Nusa      |");
-    puts("| 2. Pantai Siyut         | 2. Manjari        | 2. Pura penataran | 2. LBB Permata     |");
-    puts("|                         |                   |    Pandesidan     |                    |");
-    puts("| 3. Pantai Cucukan       | 3. Pasar          | 3. Bale Tedung    | 3. Butterfly Park  |");
-    puts("|                         |    Tradisional    |                   |   	             |");
-    puts("| 4. Pantai Masceti       | 4. Giftart_Bali   | 4. Musholla Nuruh | 4. Elephant Park   |");
-    puts("|                         |                   |    Hikmah         |                    |");
-    puts("| 5. Pantai Purnama       | 5. Blink          | 5. Merajan Ageng  | 5. Keramas Park    |");
-    puts("|                         |                   |    Arya Pering    |                    |");
-    puts("+--------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                           TEMPAT-TEMPAT WISATA DI KABUPATEN GIANYAR                                       |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Pantai Lebih              | 1. Arta Sedana               | 1. GPdl Gianyar              | 1. Taman Nusa                |");
+    puts("| 2. Pantai Siyut              | 2. Manjari                   | 2. Pura Penataran Pandesidan | 2. LBB Permata               |");
+    puts("| 3. Pantai Cucukan            | 3. Pasar Tradisional         | 3. Bale Tedung               | 3. Butterfly Park            |");
+    puts("| 4. Pantai Masceti            | 4. Giftart_Bali              | 4. Musholla Nuruh Hikmah     | 4. Elephant Park             |");
+    puts("| 5. Pantai Purnama            | 5. Blink                     | 5. Merajan Ageng Arya Pering | 5. Keramas Park              |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_karangasem(wisata fl)
 {
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|                     TEMPAT-TEMPAT WISATA DI KAB. KARANGASEM                          |");
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
-    puts("| 1. Pantai Wates         | 1. Arta Sedana    | 1. Puri Kaleran   | 1. Museum Pustaka  |");
-    puts("|                         |                   |                   |    Lontar          |");
-    puts("| 2. Pantai Bias Tugel    | 2. Dupa Amlapura  | 2. Juuk Manis     | 2. Charly's        |");
-    puts("|                         |                   |                   |    ChocolateFactory|");
-    puts("| 3. Pantai Virgin        | 3. Clandys        | 3. Pemerajan Agung| 3. Puri Agung      |");
-    puts("|                         |                   |    Batuaya        |    Karangasem      |");
-    puts("| 4. Pantai Yeh Malet     | 4. Cahaya Wirama  | 4. Masjid         | 4. Desa Tengenan   |");
-    puts("| 5. Pantai Samuh         | 5. Pasar Sibetan  | 5. GKPB Philia    | 5. -               |");
-    puts("+--------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                         TEMPAT-TEMPAT WISATA DI KABUPATEN KARANGASEM                                      |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Pantai Wates              | 1. Arta Sedana               | 1. Puri Kaleran              | 1. Museum Pustaka Lontar     |");
+    puts("| 2. Pantai Bias Tugel         | 2. Dupa Amlapura             | 2. Pura Juuk Manis           | 2. Charly's ChocolateFactory |");
+    puts("| 3. Pantai Virgin             | 3. Clandys                   | 3. Pemerajan Agung Batuaya   | 3. Puri Agung Karangasem     |");
+    puts("| 4. Pantai Yeh Malet          | 4. Cahaya Wirama             | 4. Masjid Jami' Al Mukhlisin | 4. Desa Tengenan             |");
+    puts("| 5. Pantai Samuh              | 5. Pasar Sibetan             | 5. GKPB Philia               | 5. -                         |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }    
 void view_bangli(wisata fl)
 {
-    puts("+---------------------------------------------------------------------------------------+");
-    puts("|                       TEMPAT-TEMPAT WISATA DI KAB. BANGLI                             |");
-    puts("+---------------------------------------------------------------------------------------+");
-    puts("|        Air Terjun       |       MALL        |       RELIGI       |      EDUKASI       |");
-    puts("| 1. Tibumana             | 1. Bangli Mesari  | 1. Pura Pingit     | 1. Desa Penglipuran|");
-    puts("| 2. Tegunungan           | 2. Victory Bali   | 2. Pura penataran  | 2. Museum Geopark  |");
-    puts("|                         |                   |    Sangging        |    Batur           |");
-    puts("| 3. Air Terjun Kuning    | 3. Pande Busana   | 3. Pura Kehen      | 3. Ayodya Oemah    |");
-    puts("|                         |                   |                    |    Stawberry       |");
-    puts("| 4. Pengibul             | 4. Randy Sejahtera| 4. Pura Ulun Suwi  | 4. Puri Kilian     |");
-    puts("|                         |                   |    Subak           |                    |");
-    puts("| 5. Bangkiang Djaran     | 5. Kidul Market   | 5. Pura Pengrubugan| 5. -               |");
-    puts("+---------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                             TEMPAT-TEMPAT WISATA DI KABUPATEN BANGLI                                      |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|          AIR TERJUN          |           SHOPPING           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Tibumana                  | 1. Bangli Mesari             | 1. Pura Pingit               | 1. Desa Penglipuran          |");
+    puts("| 2. Tegunungan                | 2. Victory Bali              | 2. Pura Penataran Sangging   | 2. Museum Geopark Batur      |");
+    puts("| 3. Air Terjun Kuning         | 3. Pande Busana              | 3. Pura Kehen                | 3. Ayodya Oemah Strawberry   |");
+    puts("| 4. Pengibul                  | 4. Randy Sejahtera           | 4. Pura Ulun Suwi Subak      | 4. Puri Kilian               |");
+    puts("| 5. Bangkiang Djaran          | 5. Kidul Market              | 5. Pura Pengrubugan          | 5. -                         |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_buleleng_barat(wisata fl)
 {
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|                   TEMPAT-TEMPAT WISATA DI KAB. Buleleng Barat                        |");
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
-    puts("| 1. Pantai Pumeteran     | 1. Hardys         | 1. GKII Gerogak   | 1. -               |");
-    puts("| 2. Pantai Batu Sungu    | 2. Sanchita       | 2. Pura Taman     | 2. -               |");
-    puts("|                         |    Singaraja      |    Swasti         |                    |");
-    puts("| 3. Pantai Umeanyar      | 3. Pasar Seririt  | 3. Taman Sari Loka| 3. -               |");
-    puts("|                         |                   |    Paksa          |                    |");
-    puts("| 4. Pantai Tanggu Wisia  | 4. Pasar Banyuatis| 4. Pura Puseh     | 4. -               |");
-    puts("|                         |                   |    Bestala        |                    |");
-    puts("| 5. Pantai Gili Putih    | 5. Toko suda      | 5. Pura Tepi      | 5. -               |");
-    puts("|    Sumber Kima          |    Aditya         |    Siring         |                    |");
-    puts("+--------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                          TEMPAT-TEMPAT WISATA DI KABUPATEN BULELENG BARAT                                 |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Pantai Pumeteran          | 1. Hardys                    | 1. GKII Gerogak              | 1. -                         |");
+    puts("| 2. Pantai Batu Sungu         | 2. Sanchita Singaraja        | 2. Pura Taman Swasti         | 2. -                         |");
+    puts("| 3. Pantai Umeanyar           | 3. Pasar Seririt             | 3. Taman Sari Loka Paksa     | 3. -                         |");
+    puts("| 4. Pantai Tanggu Wisia       | 4. Pasar Banyuatis           | 4. Pura Puseh Bestala        | 4. -                         |");
+    puts("| 5. Pantai Gili Putih         | 5. Toko Suda Aditya          | 5. Pura Tepi Siring          | 5. -                         |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_buleleng_timur(wisata fl)
 {
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|                   TEMPAT-TEMPAT WISATA DI KAB. Buleleng Timur                        |");
-    puts("+--------------------------------------------------------------------------------------+");
-    puts("|         PANTAI          |       MALL        |       RELIGI      |      EDUKASI       |");
-    puts("| 1. Pantai Punjuk Batu   | 1. BREM Singaraja | 1. Griya Tirta    | 1. Museum Buleleng |");
-    puts("| 2. Hidden Beach Giri    | 2. Marmarshopp_   | 2. Pura Sura      | 2. Museum Gedong   |");
-    puts("|    Emas                 |    Singaraja      |    Lepang         |    Kirtya          |");
-    puts("| 3. Pantai Pemaron       | 3. Krisna         | 3. Pura Lebah     | 3. Museum Sundal   |");
-    puts("|                         |                   |    Suwug          |    Ketjil          |");
-    puts("| 4. Pantai Kerobokan     | 4. Pasar Banyuning| 4. Seng Hong Bio  | 4. Puri Agung      |");
-    puts("|                         |                   |                   |    Singaraja       |");
-    puts("| 5. Pantai Batu Sugu     | 5. DewaDewi       | 5. Musholla       | 5. -               |");
-    puts("|                         |    Collection     |    Babusallam     |                    |");
-    puts("+--------------------------------------------------------------------------------------+");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|                                          TEMPAT-TEMPAT WISATA DI KABUPATEN BULELENG TIMUR                                 |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("|            PANTAI            |           SHOPPING           |            RELIGI            |             EDUKASI          |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
+    puts("| 1. Pantai Punjuk Batu        | 1. BREM Singaraja            | 1. Griya Tirta               | 1. Museum Buleleng           |");
+    puts("| 2. Hidden Beach Giri Emas    | 2. Marmarshopp_Singaraja     | 2. Pura Sura Lepang          | 2. Museum Gedong Kirtya      |");
+    puts("| 3. Pantai Pemaron            | 3. Krisna                    | 3. Pura Lebah Suwug          | 3. Museum Sundal Ketjil      |");
+    puts("| 4. Pantai Kerobokan          | 4. Pasar Banyuning           | 4. Seng Hong Bio             | 4. Puri Agung Singaraja      |");
+    puts("| 5. Pantai Batu Sugu          | 5. DewaDewi Collection       | 5. Musholla Babusallam       | 5. -                         |");
+    puts("+---------------------------------------------------------------------------------------------------------------------------+");
 }
 //==============================================================//
 //nama fungsi   : pilihanan kabupaten                           //
