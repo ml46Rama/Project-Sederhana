@@ -16,7 +16,7 @@ int tampilkan(int harga_penginapan);
 int main()
 {
     fungsi_hotel(a);
-    tampilkan(harga_penginapan);
+  
     return 0;
 }
 void fungsi_hotel(int a)
@@ -67,25 +67,65 @@ void jenis_hotel(int b, int lama, int c)
 }
 int fungsi_homestay(int harga_penginapan, int lama)
 {
-    //data homestay
+    printf("Nama Homestay");
+    puts("Cottage DenAyu");
+    puts("Lembayung Sari");
+    puts("Bakungan diJero");
+    puts("Segara Urip");
+    puts("Milla");
+    puts("Nassybe");
+    puts("Ida");
+    puts("D karang");
+    puts("Taruna");
+    puts("Madhasativa");
     harga_penginapan = lama * 200000 * c;
     return harga_penginapan;
 }
 int fungsi_bintang3(int harga_penginapan, int lama)
 {
-    //data hotel
+    printf("Nama Hotel Bintang 3");
+    puts("Losari");
+    puts("Quest San");
+    puts("Puri Taman Sari");
+    puts("The Galuh Pakuntan");
+    puts("The Sunjaya");
+    puts("Puri Saron");
+    puts("Camessa Hotel Amed");
+    puts("The Volcania");
+    puts("Sunia Loka");
+    puts("Melka Excelsior");
     harga_penginapan = lama * 300000 * c;
     return harga_penginapan;
 }
 int fungsi_bintang5(int harga_penginapan, int lama)
 {
-    //data hotel
+    printf("Nama Hotel Bintang 4/5");
+    puts("Aryaduta");
+    puts("Grand Mega");
+    puts("Umadathu");
+    puts("Taman Wana");
+    puts("Vision Resort");
+    puts("UnudOne");
+    puts("Rising Star");
+    puts("The Klumpu Bali");
+    puts("Taman Sari Resort");
+    puts("Nugraha Lovina");
     harga_penginapan = lama * 400000 * c;
     return harga_penginapan;
 }
 int fungsi_villa(int harga_penginapan, int lama)
 {
-    //data villa
+    printf("Nama Villa");
+    puts("De Bharata");
+    puts("Banyumas");
+    puts("Hati Indah");
+    puts("Madewi Surf");
+    puts("Karma Loka");
+    puts("L'Orange Bali");
+    puts("Akasa Villa Tulamben");
+    puts("Asli Bali");
+    puts("Amertha");
+    puts("Araminth");
     harga_penginapan = lama * 500000;
     return harga_penginapan;
 }
