@@ -473,28 +473,128 @@ void view_klungkung()
 }
 void view_gianyar()
 {
-
-    //gianyar
+    point(6, 27);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 28);
+    puts("|                                                           TEMPAT-TEMPAT WISATA DI KABUPATEN GIANYAR                                                       |");
+    point(6, 29);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 30);
+    puts("|            PANTAI            | TIKET |            SHOPPING          | TIKET |            RELIGI            | TIKET |           EDUKASI            | TIKET |");
+    point(6, 31);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 32);
+    puts("| 1. Pantai Lebih              | 0     | 1. Arta Sedana               | 0     | 1. Pura Goa Lawah            | 15000 | 1. Taman Nusa                | 85000 |");
+    point(6, 33);
+    puts("| 2. Pantai Siyut              | 0     | 2. Manjari                   | 0     | 2. Pura Goa Gajah            | 15000 | 2. Museum Gedong Arca        | 0     |");
+    point(6, 34);
+    puts("| 3. Pantai Cucukan            | 0     | 3. Pasar Tradisional         | 0     | 3. Pura Penataran Sasih      | 0     | 3. Museum Puri Lukisan       | 0     |");
+    point(6, 35);
+    puts("| 4. Pantai Masceti            | 0     | 4. Giftart_Bali              | 0     | 4. Pura Tirta Empul          | 30000 | 4. The Sukarno Center        | 20000 |");
+    point(6, 36);
+    puts("| 5. Pantai Purnama            | 0     | 5. Blink                     | 0     | 5. Pura Gunung Kawi          | 30000 | 5. Kemenuh Butterfly Park    | 37400 |");
+    point(6, 37);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");    
 }
 void view_karangasem()
 {
-
-    //karangasem
+    point(6, 27);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 28);
+    puts("|                                                         TEMPAT-TEMPAT WISATA DI KABUPATEN KARANGASEM                                                      |");
+    point(6, 29);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 30);
+    puts("|            PANTAI            | TIKET |            SHOPPING          | TIKET |            RELIGI            | TIKET |           EDUKASI            | TIKET |");
+    point(6, 31);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 32);
+    puts("| 1. Pantai Wates              | 0     | 1. Arta Sedana               | 0     | 1. Puri Kaleran              | 0     | 1. Museum Pustaka Lontar     | 0     |");
+    point(6, 33);
+    puts("| 2. Pantai Bias Tugel         | 0     | 2. Dupa Amlapura             | 0     | 2. Pura Juuk Manis           | 0     | 2. Charly's ChocolateFactory | 10000 |");
+    point(6, 34);
+    puts("| 3. Pantai Virgin             | 0     | 3. Clandys                   | 0     | 3. Pemerajan Agung Batuaya   | 0     | 3. Puri Agung Karangasem     | 0     |");
+    point(6, 35);
+    puts("| 4. Pantai Yeh Malet          | 0     | 4. Cahaya Wirama             | 0     | 4. Masjid Jami' Al Mukhlisin | 0     | 4. Desa Tengenan             | 0     |");
+    point(6, 36);
+    puts("| 5. Pantai Samuh              | 0     | 5. Pasar Sibetan             | 0     | 5. GKPB Philia               | 0     | 5. -                         | 0     |");
+    point(6, 37);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_bangli()
 {
-
-  //bangli
+    point(6, 27);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 28);
+    puts("|                                                             TEMPAT-TEMPAT WISATA DI KABUPATEN BANGLI                                                      |");
+    point(6, 29);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 30);
+    puts("|          AIR TERJUN          | TIKET |            SHOPPING          | TIKET |            RELIGI            | TIKET |           EDUKASI            | TIKET |");
+    point(6, 31);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 32);
+    puts("| 1. Air Terjun Tibumana       | 20000 | 1. Bangli Mesari             | 0     | 1. Pura Pingit               | 0     | 1. Desa Penglipuran          | 15000 |");
+    point(6, 33);
+    puts("| 2. Air Terjun Tegunungan     | 15000 | 2. Victory Bali              | 0     | 2. Pura Penataran Sangging   | 0     | 2. Museum Geopark Batur      | 20000 |");
+    point(6, 34);
+    puts("| 3. Air Terjun Kuning         | 0     | 3. Pande Busana              | 0     | 3. Pura Kehen                | 0     | 3. Ayodya Oemah Strawberry   | 15000 |");
+    point(6, 35);
+    puts("| 4. Air Terjun Pengibul       | 5000  | 4. Randy Sejahtera           | 0     | 4. Pura Ulun Suwi Subak      | 0     | 4. Puri Kilian               | 0     |");
+    point(6, 36);
+    puts("| 5. Bangkiang Djaran Waterfall| 0     | 5. Kidul Market              | 0     | 5. Pura Pengrubugan          | 0     | 5. -                         | 0     |");
+    point(6, 37);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_buleleng_barat()
 {
-
-    //buleleng
+    point(6, 27);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 28);
+    puts("|                                                          TEMPAT-TEMPAT WISATA DI KABUPATEN BULELENG BARAT                                                 |");
+    point(6, 29);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 30);
+    puts("|            PANTAI            | TIKET |            SHOPPING          | TIKET |            RELIGI            | TIKET |           EDUKASI            | TIKET |");
+    point(6, 31);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 32);
+    puts("| 1. Pantai Pumeteran          | 0     | 1. Hardys                    | 0     | 1. GKII Gerogak              | 0     | 1. Turtle Hatchery Project   | 0     |");
+    point(6, 33);
+    puts("| 2. Pantai Batu Sungu         | 0     | 2. Sanchita Singaraja        | 0     | 2. Pura Taman Swasti         | 0     | 2. Grand Surya Waterpark     | 50000 |");
+    point(6, 34);
+    puts("| 3. Pantai Umeanyar           | 0     | 3. Pasar Seririt             | 0     | 3. Taman Sari Loka Paksa     | 0     | 3. Perkebunan Anggur Rakyat  | 0     |");
+    point(6, 35);
+    puts("| 4. Pantai Tanggu Wisia       | 0     | 4. Pasar Banyuatis           | 0     | 4. Pura Puseh Bestala        | 0     | 4. -                         | 0     |");
+    point(6, 36);
+    puts("| 5. Pantai Gili Putih         | 0     | 5. Toko Suda Aditya          | 0     | 5. Pura Tepi Siring          | 0     | 5. -                         | 0     |");
+    point(6, 37);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
 void view_buleleng_timur()
 {
-
-    //buleleng
+    point(6, 27);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 28);
+    puts("|                                                          TEMPAT-TEMPAT WISATA DI KABUPATEN BULELENG TIMUR                                                 |");
+    point(6, 29);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 30);
+    puts("|            PANTAI            | TIKET |            SHOPPING          | TIKET |            RELIGI            | TIKET |           EDUKASI            | TIKET |");
+    point(6, 31);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
+    point(6, 32);
+    puts("| 1. Pantai Punjuk Batu        | 0     | 1. BREM Singaraja            | 0     | 1. Griya Tirta               | 0     | 1. Museum Buleleng           | 5000  |");
+    point(6, 33);
+    puts("| 2. Hidden Beach Giri Emas    | 0     | 2. Marmarshopp_Singaraja     | 0     | 2. Pura Sura Lepang          | 0     | 2. Museum Gedong Kirtya      | 0     |");
+    point(6, 34);
+    puts("| 3. Pantai Pemaron            | 0     | 3. Krisna                    | 15000 | 3. Pura Lebah Suwug          | 0     | 3. Museum Sundal Ketjil      | 0     |");
+    point(6, 35);
+    puts("| 4. Pantai Kerobokan          | 0     | 4. Pasar Banyuning           | 0     | 4. Seng Hong Bio             | 0     | 4. Puri Agung Singaraja      | 0     |");
+    point(6, 36);
+    puts("| 5. Pantai Batu Sugu          | 0     | 5. DewaDewi Collection       | 0     | 5. Musholla Babusallam       | 0     | 5. Workshop Jenggala Keramik | 0     |");
+    point(6, 37);
+    puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
 void pilihPaket(sign_up mhs)
 {
