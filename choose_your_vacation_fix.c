@@ -81,7 +81,10 @@ int main()
 
 void point(int x, int y)
 {
-    //fungsi memanggil koordinat yang berfungsi untuk menemtukkan tampilan program
+    /*fungsi memanggil koordinat yang berfungsi untuk menentukan posisi tampilan program*/
+    coord.X = x;
+    coord.Y = y; // X and Y coordinates
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
 void tunda(int det)
@@ -96,17 +99,32 @@ void clean()
 
 void setwarna(unsigned short warna)
 {
-   //set warna
+    /*fungsi untuk memberikan warna pada background dan text program*/
+    HANDLE hCon = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hCon, warna);
 }
 
 void proses()
 {
-    //agar bisa loading
+    point(48, 15);
+    for (int i = 1; i <= 35; i++) //menerapkan looping for untuk menampilkan loading
+    {
+        setwarna(249); //set warna berkode 249 adalah white background & blue text
+        printf("%c", 223);
+        Sleep(60);
+    }
 }
 
 void proses_menu()
 {
-    //loading 2
+    char menu_1[50] = ">>>>>PLEASE WAIT<<<<<"; //menggunakan tipe data char untuk menampilkan karakter
+    point(72, 14);
+    for (v = 0; v < 30; v++) //menerapkan looping for
+    {
+        Sleep(50);
+        printf("%c", menu_1[v]);
+    }
+    clean();
 }
 
 sign_up masuk_akun(sign_up mhs) //user disuruh masuk dulu untuk membuat akun, seperti input nama, password serta umur
@@ -598,21 +616,221 @@ void view_buleleng_timur()
 }
 void pilihPaket(sign_up mhs)
 {
-   //paket
+   proses_menu(); //menjalankan fungsi proses menu
+    point(45, 16);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 17);
+    puts("|                            JENIS PAKET PERJALANAN WISATA                            |");
+    point(45, 18);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 19);
+    puts("| 1.Paket berdasarkan kabupaten               | 2.Paket berdasarkan kategori          |");
+    point(45, 20);
+    puts("|    1.  Badung      6.  Gianyar              |    1.  Wisata Edukasi                 |");
+    point(45, 21);
+    puts("|    2.  Denpasar    7.  Karangasem           |    2.  Wisata Konservasi              |");
+    point(45, 22);
+    puts("|    3.  Tabanan     8.  Bangli               |    3.  Wisata Religi                  |");
+    point(45, 23);
+    puts("|    4.  Jembrana    9.  Buleleng Barat       |    4.  Wisata Pantai                  |");
+    point(45, 24);
+    puts("|    5.  Klungkung   10. Buleleng Timur       |    5.  Wisata Shopping                |");
+    point(45, 25);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 26);
+    puts("|     Paket di atas adalah paket yang menyediakan fasilitas untuk satu orang saja     |");
+    point(45, 27);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 28);
+    puts("|   Paket di atas telah include dengan tiket masuk, biaya makan, dan sewa kendaraan   |");
+    point(45, 29);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 30);
+    printf(" Apakah anda yakin untuk memilih paket ini ?");
+    point(45, 31);
+    printf("|NO (0)|  |YES (1)|");
+    point(45, 32);
+    printf(" Ketikan pilihan anda : ");
+    scanf("%d", &askPaket);
+
+    switch (askPaket)
+    {
+    case 0:
+        menu_cys(mhs); //memanggil fungsi menu_cys
+        break;
+    case 1:
+        hargaPaket(); //memanggil fungsi hargaPaket
+        break;
+    default:
+        break;
+    }
 }
 int hargaPaket()
 {
-    //fungsi paket
+    point(45, 33);
+    printf(" Pilihlah kode paket perjalanan anda : ");
+    scanf("%d", &paket); //menyimpan data paket pilihan user
+    point(45, 34);
+    printf(" Pilihlah kode bagian paket sesuai tabel di atas : ");
+    scanf("%d", &bagPak); //menyimpan data bagian paket pilihan user
+
+    if (paket == 1 && bagPak == 1) //Paket Kabupaten Badung
+        hp = 200000;
+    else if (paket == 1 && bagPak == 2) //Paket Kota Denpasar
+        hp = 200000;
+    else if (paket == 1 && bagPak == 3) //Paket Kabupaten Gianyar
+        hp = 200000;
+    else if (paket == 1 && bagPak == 4) //Paket Kabupaten Klungkung
+        hp = 200000;
+    else if (paket == 1 && bagPak == 5) //Paket Kabupaten Bangli
+        hp = 200000;
+    else if (paket == 1 && bagPak == 6) //Paket Kabupaten Jembrana
+        hp = 200000;
+    else if (paket == 1 && bagPak == 7) //Paket Kabupaten Karangasem
+        hp = 200000;
+    else if (paket == 1 && bagPak == 8) //Paket Kabupaten Tabanan
+        hp = 200000;
+    else if (paket == 1 && bagPak == 9) //Paket Kabupaten Buleleng Barat
+        hp = 200000;
+    else if (paket == 1 && bagPak == 10) //Paket Kabupaten Buleleng Timur
+        hp = 200000;
+    else if (paket == 2 && bagPak == 1) //Paket Edukasi
+        hp = 200000;
+    else if (paket == 2 && bagPak == 2) //Paket Konservasi
+        hp = 300000;
+    else if (paket == 2 && bagPak == 3) //Paket Religi
+        hp = 150000;
+    else if (paket == 2 && bagPak == 4) //Paket Pantai
+        hp = 400000;
+    else if (paket == 2 && bagPak == 5) //Paket Shopping
+        hp = 100000;
+    else //Jika input user tidak sesuai, else akan tereksekusi
+        printf("Kode yang anda input salah!");
+    clean(); //menjalankan fungsi clean
 }
 int menu_inputan(sign_up mhs)
 {
-   //fungsi menu
+   proses_menu(); //menjalankan fungsi proses menu
+inputan:
+    point(45, 16);
+    puts("===========================================================================");
+    point(45, 17);
+    puts("|                              MENU SELANJUTNYA                           |");
+    point(45, 18);
+    puts("===========================================================================");
+    point(45, 19);
+    puts("|          -WAJIB-         ||      -OPSIONAL-     ||      -LAINNYA-       |");
+    point(45, 20);
+    puts("|1. Input Tempat Wisata    ||3. Tempat Makan      ||8. Tampilkan Data     |");
+    point(45, 21);
+    puts("|2. Input Tiket Masuk      ||4. Menyewa Guide     ||9. Exit               |");
+    point(45, 22);
+    puts("|                          ||5. Menyewa Mobil     ||                      |");
+    point(45, 23);
+    puts("|                          ||6. Menghitung bensin ||                      |");
+    point(45, 24);
+    puts("|                          ||7. Pesan Penginapan  ||                      |");
+    point(45, 25);
+    puts("===========================================================================");
+    point(45, 26);
+    printf("Masukkan inputan yang anda inginkan : ");
+    scanf("%d", &pilihan_menu);
+    clean();
+
+    switch (pilihan_menu)
+    {
+    case 1:
+        input_data();
+        proses_menu();
+        goto inputan;
+        break;
+        
+    case 2:
+        tiket_masuk();
+        clean(); //menjalankan fungsi clean
+        proses_menu();
+        goto inputan;
+        break;
+
+    case 3:
+        input_tempatmakan();
+        clean(); //menjalankan fungsi clean
+        proses_menu();
+        goto inputan;
+        break;
+
+    case 4:
+        int_guide(jumlah_guide, jam_guide);
+        clean(); //menjalankan fungsi clean
+        proses_menu();
+        goto inputan;
+        break;
+
+    case 5:
+        pilihanint();
+        clean(); //menjalankan fungsi clean
+        proses_menu();
+        goto inputan;
+        break;
+
+    case 6:
+        input_jarak(jarak, kendaraan, bbm);
+        clean(); //menjalankan fungsi clean
+        proses_menu();
+        goto inputan;
+        break;
+
+    case 7:
+        fungsi_hotel();
+        clean(); //menjalankan fungsi clean
+        proses_menu();
+        goto inputan;
+        break;
+            
+    case 8:
+        tampilkan();
+        tampilkan_data(mhs);
+        break;
+            
+    case 9:
+        penutup();
+        writeKuitansi(mhs);
+        exit(0);
+            
+    default:
+        break;
+    }
+    clean(); //menjalankan fungsi clean
 }
 
 void tampilan_pilihan_kabupaten()
 {
+    point(54, 15);
+    puts("=======================================================");
+    point(54, 16);
+    puts("|                   DAFTAR KABUPATEN                  |");
+    point(54, 17);
+    puts("=======================================================");
+    point(54, 18);
+    puts("|1. Badung                   |6. Gianyar              |");
+    point(54, 19);
+    puts("|2. Denpasar                 |7. Karangasem           |");
+    point(54, 20);
+    puts("|3. Tabanan                  |8. Bangli               |");
+    point(54, 21);
+    puts("|4. Jembrana                 |9. Buleleng Barat       |");
+    point(54, 22);
+    puts("|5. Klungkung                |10.Buleleng Timur       |");
+    point(54, 23);
+    puts("=======================================================");
+    point(54, 24);
+    printf("Input kode kabupaten yang ingin kamu kunjungi  : ");
+    scanf("%d", &kabupaten);
+    point(54, 25);
+    printf("Nama kabupaten yang ingin dikunjungi           : ");
+    scanf("%s", &kabupaten_nama);
 
-    //pilih kabupaten
+    return;
 }
 int input_data()
 {
@@ -1483,8 +1701,76 @@ int jenis_hotel()
 
 int tiket_masuk()
 {
-//menu penguhubung tiket masuk
+    proses_menu();
+    point(53, 15);
+    puts("=======================================================");
+    point(53, 16);
+    puts("|                   DAFTAR KABUPATEN                  |");
+    point(53, 17);
+    puts("=======================================================");
+    point(53, 18);
+    puts("|1. Badung                   |6. Gianyar              |");
+    point(53, 19);
+    puts("|2. Denpasar                 |7. Karangasem           |");
+    point(53, 20);
+    puts("|3. Tabanan                  |8. Bangli               |");
+    point(53, 21);
+    puts("|4. Jembrana                 |9. Buleleng Barat       |");
+    point(53, 22);
+    puts("|5. Klungkung                |10.Buleleng Timur       |");
+    point(53, 23);
+    puts("=======================================================");
+    point(53, 15);
+    printf("Anda ingin melihat harga tiket di kabupaten yang mana  (masukkan kode)  : ");
+    scanf("%d", &kabupaten);
+    clean();
+
+    switch (kabupaten)
+    {
+    case 1:
+        view_badung();
+        looping_tiket();
+        break;
+    case 2:
+        view_denpasar();
+        looping_tiket();
+        break;
+    case 3:
+        view_tabanan();
+        looping_tiket();
+        break;
+    case 4:
+        view_jembrana();
+        looping_tiket();
+        break;
+    case 5:
+        view_klungkung();
+        looping_tiket();
+        break;
+    case 6:
+        view_gianyar();
+        looping_tiket();
+        break;
+    case 7:
+        view_karangasem();
+        looping_tiket();
+        break;
+    case 8:
+        view_bangli();
+        looping_tiket();
+        break;
+    case 9:
+        view_buleleng_barat();
+        looping_tiket();
+        break;
+    case 10:
+        view_buleleng_timur();
+        looping_tiket();
+        break;
+    default:
+        break;
     }
+}
 void looping_tiket()
 {
     point(6, 39);
@@ -1523,7 +1809,6 @@ void tampilkan()
         free(n[i]);
 
     }
-
 }
 int tampilkan_data(sign_up mhs)
 {
