@@ -61,8 +61,55 @@ typedef struct
 
 } sign_up;
 
-//fungsi prototype
-//isi fungsi 
+//prototype function
+void tunda(int det);
+void clean();
+void setwarna(unsigned short warna);
+void proses();
+sign_up masuk_akun(sign_up mhs);
+sign_up menu_login(sign_up mhs);
+int menu_cys(sign_up mhs);
+int menu_inputan(sign_up mhs);
+int pilihan_kabupaten();
+void tampilan_pilihan_kabupaten();
+void view_badung();
+void view_denpasar();
+void view_tabanan();
+void view_jembrana();
+void view_klungkung();
+void view_gianyar();
+void view_karangasem();
+void view_bangli();
+void view_buleleng_barat();
+void view_buleleng_timur();
+void pilihPaket(sign_up mhs);
+int hargaPaket();
+int input_data();
+void input_tempatmakan();
+int int_guide(int jumlah_guide, int jam_guide);
+int pilihanint();
+int input_jarak(int jarak, int kendaraan, int bensin);
+int input_mobil(int jarak, int p);
+int input_motor(int jarak, int p);
+int hasil_bensin(int p);
+void tampilkan();
+void fungsi_hotel();
+int jenis_hotel();
+int fungsi_homestay(int harga_penginapan, int lama);
+int fungsi_bintang3(int harga_penginapan, int lama);
+int fungsi_bintang5(int harga_penginapan, int lama);
+int fungsi_villa(int harga_penginapan, int lama);
+int tampilkan_data(sign_up mhs);
+int jaraknya();
+int writeKuitansi(sign_up mhs);
+int writeKuitansiPaket(sign_up mhs);
+void proses();
+void proses_menu();
+void clean();
+void point(int x, int y);
+int tiket_masuk();
+void looping_tiket();
+void penutup(); 
 
 int main()
 {
