@@ -39,5 +39,5 @@ int hargaPaket()
         hp = 100000;
     else //Jika input user tidak sesuai, else akan tereksekusi
         printf("Kode yang anda input salah!");
-    clean();
+    clean(); //menghapus fitur harga paket untuk menuju ke fitur selanjutnya
 }
