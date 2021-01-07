@@ -1,32 +1,21 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-typedef struct
+int int_guide(int jumlah_guide, int jam_guide)
 {
-    int choice;               //untuk memilih pilihan apakah dia ingin travelling apa tidaak
-    int kabupaten;            //untuk memilih kabupaten berdasarkan kode
-    string kabupaten_nama;    //untuk mengimputkan nama dari kabupaten
-    int pilihan_klik;         //untuk memilih apakah user akan melihat tampilan dulu apa langsung ke input
-    int pilih_lanjutan;       //untuk melanjutkan inputan setelah ia memilih liburan dimana
-    float jarak;              //input jarak user dari tempat wisata
-    int kendaraan;            //input kendaraan yang digunakan user
-    float jarak_wisata_mobil; //jarak jika menggunakan mobil
-    float jarak_wisata_motor; //jarak jika menggunakan motor
-    int makan;                //untuk input tempat makan
-    string input_tour_guide;
-    int jumlah_guide;
-    int jam_guide;
-    float jumlah_sewa;
+    proses_menu();
+    point(68, 15);
+    puts("===========================================");
+    point(68, 16);
+    puts("|          PENYEWAAN TOUR GUIDE           |");
+    point(68, 17);
+    puts("===========================================");
+    point(68, 18);
+    printf("Anda ingin berapa tour guide?    : ");
+    scanf("%d", &jumlah_guide);
+    point(68, 19);
+    printf("Anda ingin berapa jam menyewa ?  : ");
+    scanf("%d", &jam_guide);
 
-} feeling;
+    jumlah_int = jumlah_guide * jam_guide * 20000;
 
-feeling sewa_guide(feeling fl, sewa sw){
-        printf("\n anda ingin berapa tour guide?    :");
-        scanf("%d", &fl.jumlah_guide);
-        printf("\n anda ingin berapa jam menyewa ?  :");
-        scanf("%d", &fl.jam_guide);
-
-        fl.jumlah_sewa=fl.jumlah_guide*fl.jam_guide*20000;
-return fl;
+    return jumlah_int;
 }
 
