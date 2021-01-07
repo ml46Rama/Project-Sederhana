@@ -172,3 +172,29 @@ void proses_menu()
     }
     clean();
 }
+void penutup()
+{
+    char menu_2[50] = ">>TERIMA KASIH TELAH MENGGUNAKAN PROGRAM KAMI<<";
+    char menu_3[50] = ">>SILAKAN MENGECEK KWITANSI DALAM BENTUK .TXT<<";
+    char menu_4[50] = ">>>>>>>>>>>>>>>SELAMAT BERLIBUR<<<<<<<<<<<<<<<<";
+
+    point(65, 14);
+    for (i = 0; i < 50; i++)
+    {
+        Sleep(50);
+        printf("%c", menu_2[i]);
+    }
+    point(65, 16);
+    for (i = 0; i < 50; i++)
+    {
+        Sleep(50);
+        printf("%c", menu_3[i]);
+    }
+    point(65, 18);
+    for (i = 0; i < 50; i++)
+    {
+        Sleep(50);
+        printf("%c", menu_4[i]);
+    }
+    clean();
+}
