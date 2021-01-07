@@ -1,4 +1,4 @@
-int menu_cys(sign_up mhs)
+int menu_cys(sign_up mhs) //menampilkan beberapa main fitur dari program choose your vacation
 {
     proses_menu();
 menu:
@@ -52,18 +52,18 @@ menu:
         break;
 
     case 2:
-        proses_menu();
+        proses_menu();    //menuju menu fitur-fitur dari program chose your vacation
         tampilan_pilihan_kabupaten();
-        menu_inputan(mhs);
+        menu_inputan(mhs);      //tampilan menu menu inputan
         clean();
         goto menu;
         break;
 
     case 3:
-        pilihPaket(mhs);
-        writeKuitansiPaket(mhs);
-        penutup();
-        exit(0);
+        pilihPaket(mhs); //menuju fitur paket-paket yang telah disediakan
+        writeKuitansiPaket(mhs);  //untuk membuat kwitansi paket
+        penutup();      //untuk menampilkan kata - kata penutup
+        exit(0);        //untuk menyelesaikan program
         break;
     default:
         goto menu;
@@ -71,7 +71,7 @@ menu:
     }
     clean();
 }
-int menu_inputan(sign_up mhs)
+int menu_inputan(sign_up mhs) //untuk menampilkan fitur menu inputan
 {
     proses_menu();
 inputan:
@@ -84,15 +84,15 @@ inputan:
     point(45, 19);
     puts("|          -WAJIB-         ||      -OPSIONAL-     ||      -LAINNYA-       |");
     point(45, 20);
-    puts("| 1. Tempat Wisata         || 3. Tempat Makan     || 8. Tampilkan Data    |");
+    puts("|1. Input Tempat Wisata    ||3. Tempat Makan      ||8. Tampilkan Data     |");
     point(45, 21);
-    puts("| 2. Tiket Masuk           || 4. Tour Guide       || 9. Exit              |");
+    puts("|2. Input Tiket Masuk      ||4. Menyewa Guide     ||9. Exit               |");
     point(45, 22);
-    puts("|                          || 5. Sewa Mobil       ||                      |");
+    puts("|                          ||5. Menyewa Mobil     ||                      |");
     point(45, 23);
-    puts("|                          || 6. Jarak dan Bensin ||                      |");
+    puts("|                          ||6. Menghitung bensin ||                      |");
     point(45, 24);
-    puts("|                          || 7. Pesan Penginapan ||                      |");
+    puts("|                          ||7. Pesan Penginapan  ||                      |");
     point(45, 25);
     puts("===========================================================================");
     point(45, 26);
@@ -103,58 +103,58 @@ inputan:
     switch (pilihan_menu)
     {
     case 1:
-        input_data();
+        input_data();   //user menginput tempat wisata yang ingin dituju (maksimal 5)
         proses_menu();
         goto inputan;
         break;
     case 2:
-        tiket_masuk();
+        tiket_masuk(); //user menginput tempat tujuan dan harga tiket
         clean();
         proses_menu();
         goto inputan;
         break;
 
     case 3:
-        input_tempatmakan();
+        input_tempatmakan(); //user menginput nama nama tempat makan yang disediakan
         clean();
         proses_menu();
         goto inputan;
         break;
 
     case 4:
-        int_guide(jumlah_guide, jam_guide);
+        int_guide(jumlah_guide, jam_guide); //user menginput penyewaan guide
         clean();
         proses_menu();
         goto inputan;
         break;
 
     case 5:
-        pilihanint();
+        pilihanint(); //user menginput penyewaan mobil
         clean();
         proses_menu();
         goto inputan;
         break;
 
     case 6:
-        input_jarak(jarak, kendaraan, bbm);
+        input_jarak(jarak, kendaraan, bbm); //user menginput jarak dan bensin yang kira kira digunakan
         clean();
         proses_menu();
         goto inputan;
         break;
 
     case 7:
-        fungsi_hotel();
+        fungsi_hotel(); //user menginput penyewaan hotel
         clean();
         proses_menu();
         goto inputan;
         break;
     case 8:
-        tampilkan();
+        tampilkan(); //user dapat melihat tampilan data yang sudah diinput
         tampilkan_data(mhs);
         break;
     case 9:
-        penutup();
-        writeKuitansi(mhs);
+        penutup(); //user diarahkan menuju keluar dari program
+        writeKuitansi(mhs); //membuat hasil data user yang telah diinput berupa kwitansi dalam bentuk file .txt
         exit(0);
     default:
         break;
