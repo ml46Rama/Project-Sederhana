@@ -1,6 +1,6 @@
 void fungsi_hotel() //user menentukan apakah ingin menginap disebuah hotel
 {
-    proses_menu();
+    proses_menu(); //memanggil fungsi proses menu
     point(65, 15);
     puts("=======================================================");
     point(65, 16);
@@ -16,11 +16,11 @@ void fungsi_hotel() //user menentukan apakah ingin menginap disebuah hotel
     point(65, 21);
     puts("-------------------------------------------------------");
     point(65, 22);
-    scanf("%d", &a);
+    scanf("%d", &a); //menyimpan data pada variabel a
     clean();
     if (a == 1)
     {
-        jenis_hotel();
+        jenis_hotel(); //memanggil fungsi jenis_hotel
     }
     else
     {
@@ -30,7 +30,7 @@ void fungsi_hotel() //user menentukan apakah ingin menginap disebuah hotel
 
 int jenis_hotel() //menampilkan jenis - jenis hotel dan daftar nama - nama hotelnya
 {
-    proses_menu();
+    proses_menu(); //memanggil fungsi proses menu
     int pilihan_penginapan;
     point(68, 15);
     puts("=============================================");
@@ -50,15 +50,15 @@ int jenis_hotel() //menampilkan jenis - jenis hotel dan daftar nama - nama hotel
     puts("=============================================");
     point(68, 23);
     printf("jenis hotel apa yang anda inginkan  :");
-    scanf("%d", &b);
+    scanf("%d", &b); //menyimpan data pada variabel b
     point(68, 24);
     printf("anda ingin menginap berapa lama :");
-    scanf("%d", &lama);
+    scanf("%d", &lama); //menyimpan data pada variabel lama
     point(68, 25);
     printf("Bila anda memilih villa input 1 atau 2 (1 villa berkapasitas 5 orang)");
     point(68, 26);
     printf("anda ingin pesan untuk berapa orang(kecuali vila)   :");
-    scanf("%d", &c);
+    scanf("%d", &c); //menyimpan data pada variabel c
     clean();
 
     if (b == 1)
@@ -367,5 +367,5 @@ int jenis_hotel() //menampilkan jenis - jenis hotel dan daftar nama - nama hotel
         printf("salah");
     }
 
-    clean();
+    clean(); //membersihkan tampilan layar
 }
