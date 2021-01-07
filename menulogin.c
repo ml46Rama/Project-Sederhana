@@ -29,13 +29,13 @@ sign_up masuk_akun(sign_up mhs) //user disuruh masuk dulu untuk membuat akun, se
     printf(" Masukkan password anda    : ");
     scanf("%s", &mhs.password);
 
-    clean();
+    clean(); //membersihkan tampilan layar
     return mhs;
 }
 
 sign_up menu_login(sign_up mhs) //user akan disuruh memverifikasi dengan menginput nama dan password
 {
-    proses_menu();
+    proses_menu(); //memanggil fungsi proses menu
 pilihan:
     point(48, 15);
     puts("^======================================================================^");
@@ -58,26 +58,26 @@ pilihan:
     point(48, 23);
     printf(" Masukkan password       : ");
     scanf("%9s", &mhs.password1);
-    if (strcmp(mhs.nama1, mhs.nama) != 0)
+    if (strcmp(mhs.nama1, mhs.nama) != 0) //membandingkan dua string, bila nama tidak sama dengan 0 maka ini tereksekusi
     {
         point(48, 25);
         printf("error, masukkan nama dan password anda dengan benar!!!\n");
-        clean();
+        clean(); //membersihkan tampilan layar
         goto pilihan;
     }
-    else if (strcmp(mhs.password1, mhs.password) != 0)
+    else if (strcmp(mhs.password1, mhs.password) != 0) //membandingkan dua string, bila password tidak sama dengan 0 maka ini tereksekusi
     {
         point(48, 25);
         printf("error, masukkan nama dan password anda dengan benar!!!\n");
-        clean();
+        clean(); //membersihkan tampilan layar
         goto pilihan;
     }
     else
     {
-        clean();
-        menu_cys(mhs);
+        clean(); //membersihkan tampilan layar
+        menu_cys(mhs); //memanggil fungsi menu_cys
     }
-    clean();
+    clean(); //membersihkan tampilan layar
     return mhs;
 }
 
