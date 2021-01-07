@@ -4,9 +4,10 @@
 #include <windows.h>
 #include <time.h>
 #include <conio.h>
+
 #define MOBIL1 50000       //harga sewa untuk mobil isi 5 orang
-#define MOBIL2 70000       //harga sewa untuk bis Mini
-#define MOBIL3 100000      //harga sewa untuk bis besar
+#define MOBIL2 70000       //harga sewa untuk bis Mini isi 15 orang
+#define MOBIL3 100000      //harga sewa untuk bis besar isi 35 orang
 #define K_MOBIL 19         //pembagi liter untuk mobil
 #define K_MOTOR 37         //pembagi liter untuk motor
 #define PERTALITE 7650     //harga pertalite
@@ -14,6 +15,7 @@
 #define KONS 2             //untuk menghitung jarak pulang pergi
 #define MAXLEN 100         //untuk menginput banyak karakter yang bisa diinput saat menginputkan tempat wisata
 #define MAXLINES 5000      //untuk menginput banyak line
+
 typedef char string[50];   //agar semua fungsi char dapat dipanggil melalui kata string
 int umur;                  //untuk menginput umur
 int i;                     //untuk digunakan di array pasa saat input tujuan int
@@ -26,31 +28,30 @@ char kabupaten_nama[50];   //untuk mengimputkan nama dari kabupaten
 int input_tour_guide;      //untuk menginput ingin menyewa guide
 int jumlah_guide;          //untuk menginput jumlah guide yang ingin disewa
 int jam_guide;             //untuk menginput jam sewa guide
-int jumlah_int;
+int jumlah_int;            //untuk menyimpan data hasil perhitungan pada fitur guide
 int makan;                 //untuk input tempat makan
 int harga;                 //untuk menampilkan harga
-int ask, pilihmobil, jam;
-int hargaint;
+int pilihmobil;            //untuk menyimpan data mobil pilihan user
+int jam;                   //untuk menyimpan data lama menyewa mobil
+int hargaint;              //untuk menyimpan data hasil perhitungan pada fitur sewa mobil
 int jarak;                 //input jarak user dari tempat int
 int kendaraan;             //input kendaraan yang digunakan user
-int p;
-int a;                     //variabe untuk mewakili apakah user ingin meginap
+int a;                     //variabel untuk mewakili apakah user ingin meginap
 int b;                     //mewakili user memilih jenis tempat penginapan
 int c;                     //mewakili user jika menginputkan berapa banyak org yang akan menginap
 int lama;                  //untuk menanyakan berapa lama user menginap
 int harga_penginapan;      //jumlah harga total
-int hasil_jarak;
-int bbm, bensin;
-char *n[MAXLINES];
-int hp;
-int askPaket;
-int o;
-int sum = 0;
-int looping[100];
-int v;
-int sumtot;
-char **str;
-COORD coord = {0, 0};
+int bbm;                   //untuk menyimpan data kode bahan bakar kendaraan user
+int bensin;                //untuk menyimpan data hasil perhitungan pada fitur jarak dan bensin
+char *n[MAXLINES];         //pointer untuk input tempat wisata agar dapat ditampilkan
+int hp;                    //untuk menyimpan data pada harga paket
+int askPaket;              //untuk bertanya di fitur pilih paket
+int o;                     //untuk menyimpan data banyak orang yang dibelikan tiket masuk
+int sum = 0;               //untuk menjumlahkan semua harga tiket masuk yang telah di input pada looping
+int looping[100];          //untuk menyimpan nilai dari inputan harga tiket masuk
+int v;                     //variabel pada looping proses menu
+int sumtot;                //untuk menyimpan data hasil perhitungan pada fitur tiket masuk
+COORD coord = {0, 0};      //struct untuk menentukan koordinat
 
 typedef struct
 {
@@ -62,7 +63,7 @@ typedef struct
 
 } sign_up;
 
-//fungsi prototype
+//prototype function
 void tunda(int det);
 void clean();
 void setwarna(unsigned short warna);
@@ -111,6 +112,7 @@ void point(int x, int y);
 int tiket_masuk();
 void looping_tiket();
 void penutup();
+
 int main()
 {
     proses();
@@ -136,7 +138,7 @@ void point(int x, int y)      //untuk memposisikan program ditengah-tengah
 
 void tunda(int det)
 {
-    Sleep(det);               //Fungsi sleep adalah fungsi yang digunakan untuk menghentikan sementara kerja program kita, bisa juga dibilang “pause”.
+    Sleep(det);               //fungsi sleep adalah fungsi yang digunakan untuk menghentikan sementara kerja program kita, bisa juga dibilang “pause”.
 }
 
 void clean()                  //untuk membersihkan fitur sebelumnya
@@ -144,7 +146,7 @@ void clean()                  //untuk membersihkan fitur sebelumnya
     system("cls");
 }
 
-void setwarna(unsigned short warna)   //untuk memberi waran backgrund dan warna teks
+void setwarna(unsigned short warna)   //untuk memberi warna background dan warna teks
 {
     HANDLE hCon = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hCon, warna);
@@ -179,19 +181,19 @@ void penutup() //menampilkan kata - kata penutup dari program choose your vacati
     char menu_4[50] = ">>>>>>>>>>>>>>>SELAMAT BERLIBUR<<<<<<<<<<<<<<<<";
 
     point(65, 14);
-    for (i = 0; i < 50; i++)
+    for (i = 0; i < 50; i++) //looping menu_2
     {
         Sleep(50);
         printf("%c", menu_2[i]);
     }
     point(65, 16);
-    for (i = 0; i < 50; i++)
+    for (i = 0; i < 50; i++) //looping menu_3
     {
         Sleep(50);
         printf("%c", menu_3[i]);
     }
     point(65, 18);
-    for (i = 0; i < 50; i++)
+    for (i = 0; i < 50; i++) //looping menu_4
     {
         Sleep(50);
         printf("%c", menu_4[i]);
