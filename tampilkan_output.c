@@ -1,6 +1,6 @@
 int tampilkan_data(sign_up mhs) //menampilkan data yang telah user input
 {
-    int w;
+    int w; //digunakan untuk menyimpan inputan user (1/2)
 
     point(75, 15);
     puts("========================");
@@ -28,17 +28,17 @@ int tampilkan_data(sign_up mhs) //menampilkan data yang telah user input
     printf("ingin kembali ke menu    ? ");
     point(75, 27);
     printf("1 jika iya|2 jika mengakhiri     :");
-    scanf("%d", &w);
+    scanf("%d", &w); //menyimpan data pada variabel w
 
     if (w == 1)
     {
-        menu_inputan(mhs);
+        menu_inputan(mhs); //memanggil fungsi menu_inputan
     }
     else if (w == 2)
     {
-        clean();
-        penutup();
-        writeKuitansi(mhs);
+        clean(); //memanggil fungsi view
+        penutup(); //memanggil fungsi penutup
+        writeKuitansi(mhs); //memanggil fungsi untuk mencetak kuitansi
         exit(0);
     }
     else
@@ -46,6 +46,6 @@ int tampilkan_data(sign_up mhs) //menampilkan data yang telah user input
         point(75, 29);
         printf("anda memasukkan kode yang salah");
     }
-    clean();
+    clean(); //membersihkan tampilan layar
     return 0;
 }
