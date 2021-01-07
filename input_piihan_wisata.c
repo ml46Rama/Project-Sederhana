@@ -1,4 +1,4 @@
-int input_data()
+int input_data()  //user menginput nama nama kabupaten yang ingin dituju
 {
 
     proses_menu();
@@ -39,7 +39,7 @@ int input_data()
     }
 
     point(6, 39);
-    printf("Berapa tempat wisata yang ingin anda kunjungi (max 5)  : ");
+    printf("Berapa tempat wisata yang ingin anda kunjungi (max 5)  : "); //menginput maksimal 5 tempat tujuan
     scanf("%d", &N);
     point(6, 40);
     printf("Masukkan pilihan anda : ");
@@ -48,17 +48,17 @@ int input_data()
     {
         point(30, 41);
         n[i] = malloc(sizeof(char) * MAXLEN); //fungsi standar untuk mengalokasikan memori dari sizeof(char)
-        fgets(n[i], 10000, stdin);
+        fgets(n[i], 10000, stdin); //fgets untuk membaca string dari file sampai ditemukannya karakter baris baru
     }
 
     clean();
     return 0;
 }
-void tampilkan()
+void tampilkan() //menampilkan data yang telah user input
 {
     proses_menu();
-    point(75, 15);
-    printf(" Pilihan anda : ");
+    point(75, 5);
+    printf("yang anda pilih:");
     for (i = 0; i <= N; i++)
     {
 
@@ -68,5 +68,7 @@ void tampilkan()
     for (i = 0; i <= N; i++)
     {
         free(n[i]);
+
     }
+
 }
