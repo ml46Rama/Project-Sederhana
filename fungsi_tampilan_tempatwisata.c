@@ -1,6 +1,6 @@
 int pilihan_kabupaten() //menampilkan daftar-daftar kabupaten yang ada di Bali
 {
-    proses_menu();
+    proses_menu(); //memanggil fungsi proses menu
 pilihan:
     point(53, 15);
     puts("=======================================================");
@@ -24,7 +24,7 @@ pilihan:
     puts("Ketikkan angka 0 bila ingin kembali ke menu sebelumnya");
     point(53, 25);
     printf("Ketikkan kode kabupaten untuk melihat daftar wisata : ");
-    scanf("%d", &kabupaten);
+    scanf("%d", &kabupaten); //menyimpan data pada variabel kabupaten
     switch (kabupaten)
     {
     case 1:
@@ -70,7 +70,7 @@ pilihan:
     default:
         break;
     }
-    clean();
+    clean(); //membersihkan tampilan layar
 }
 
 void view_badung() //tampilan nama nama tempat wisata dan harga tiketnya di badung
