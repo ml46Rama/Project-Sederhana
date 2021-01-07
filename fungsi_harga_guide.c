@@ -1,4 +1,4 @@
-int int_guide(int jumlah_guide, int jam_guide)
+int int_guide(int jumlah_guide, int jam_guide) //untuk menampilkan fitur penyewaan tour guide
 {
     proses_menu();
     point(68, 15);
@@ -14,8 +14,7 @@ int int_guide(int jumlah_guide, int jam_guide)
     printf("Anda ingin berapa jam menyewa ?  : ");
     scanf("%d", &jam_guide);
 
-    jumlah_int = jumlah_guide * jam_guide * 20000;
+    jumlah_int = jumlah_guide * jam_guide * 20000; //menghitung pembayaran dari penyewaan tour guide
 
     return jumlah_int;
 }
-
