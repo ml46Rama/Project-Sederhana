@@ -4,7 +4,7 @@ void pilihPaket(sign_up mhs) //tampilan fitur pemilihan paket
     point(45, 16);
     puts("+-------------------------------------------------------------------------------------+");
     point(45, 17);
-    puts("|                            JENIS PAKET PERJALANAN WISATA                            |");
+    puts("|                            JENIS PAKET PERJALANAN WISATA                            |"); //tampilan paket - paket perjalanan yang telah disediakan
     point(45, 18);
     puts("+-------------------------------------------------------------------------------------+");
     point(45, 19);
