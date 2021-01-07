@@ -1,29 +1,51 @@
-#include <stdio.h>
-#include <stdlib.h>
+void pilihPaket(sign_up mhs)
+{
+    proses_menu();
+    point(45, 16);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 17);
+    puts("|                            JENIS PAKET PERJALANAN WISATA                            |");
+    point(45, 18);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 19);
+    puts("| 1.Paket berdasarkan kabupaten               | 2.Paket berdasarkan kategori          |");
+    point(45, 20);
+    puts("|    1.  Badung      6.  Gianyar              |    1.  Wisata Edukasi                 |");
+    point(45, 21);
+    puts("|    2.  Denpasar    7.  Karangasem           |    2.  Wisata Konservasi              |");
+    point(45, 22);
+    puts("|    3.  Tabanan     8.  Bangli               |    3.  Wisata Religi                  |");
+    point(45, 23);
+    puts("|    4.  Jembrana    9.  Buleleng Barat       |    4.  Wisata Pantai                  |");
+    point(45, 24);
+    puts("|    5.  Klungkung   10. Buleleng Timur       |    5.  Wisata Shopping                |");
+    point(45, 25);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 26);
+    puts("|     Paket di atas adalah paket yang menyediakan fasilitas untuk satu orang saja     |");
+    point(45, 27);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 28);
+    puts("| Paket di atas telah include dengan biaya makan, jasa tour guide, dan sewa kendaraan |");
+    point(45, 29);
+    puts("+-------------------------------------------------------------------------------------+");
+    point(45, 30);
+    printf(" Apakah anda yakin untuk memilih paket ini ?");
+    point(45, 31);
+    printf("|NO (0)|  |YES (1)|");
+    point(45, 32);
+    printf(" Ketikan pilihan anda : ");
+    scanf("%d", &askPaket);
 
-//deklarasi variabel
-int paket, bagPak;
-
-//deklarasi fungsi
-void pilihPaket();
-
-//fungsi memilih paket
-void pilihPaket(){
-
-puts ("+---------------------------------------------------------------------------+");
-puts ("|                       JENIS PAKET PERJALANAN WISATA                       |");
-puts ("+---------------------------------------------------------------------------+");
-puts ("| 1.Paket berdasarkan kabupaten          | 2.Paket berdasarkan kategori     |");
-puts ("|    1.  Badung      6.  Gianyar         |    1.  Edukasi                   |");
-puts ("|    2.  Denpasar    7.  Karangasem      |    2.  Konservasi                |");
-puts ("|    3.  Tabanan     8.  Bangli          |    3.  Religi                    |");
-puts ("|    4.  Jembrana    9.  Buleleng Barat  |    4.  Pantai                    |");
-puts ("|    5.  Klungkung   10. Buleleng Timur  |    5.  Shopping                  |");
-puts ("+---------------------------------------------------------------------------+");
-printf("Pilihlah kode paket perjalanan anda : ");
-scanf("%d",&paket); //menyimpan data paket pilihan user
-printf("Pilihlah kode bagian paket sesuai tabel di atas : ");
-scanf("%d", &bagPak); //menyimpan data bagian paket pilihan user
-
-hargaPaket(); //memanggil fungsi hargaPaket
+    switch (askPaket)
+    {
+    case 0:
+        menu_cys(mhs);
+        break;
+    case 1:
+        hargaPaket(); //memanggil fungsi hargaPaket
+        break;
+    default:
+        break;
+    }
 }
