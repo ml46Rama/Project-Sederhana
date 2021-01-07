@@ -1,4 +1,4 @@
-int pilihan_kabupaten()
+int pilihan_kabupaten() //menampilkan daftar-daftar kabupaten yang ada di Bali
 {
     proses_menu();
 pilihan:
@@ -28,43 +28,43 @@ pilihan:
     switch (kabupaten)
     {
     case 1:
-        view_badung();
+        view_badung();  //menampilkan tempat wisata di badung
         goto pilihan;
         break;
     case 2:
-        view_denpasar();
+        view_denpasar();  //menampilkan tempat wisata di denpasar
         goto pilihan;
         break;
     case 3:
-        view_tabanan();
+        view_tabanan();  //menampilkan tempat wisata di tabanan
         goto pilihan;
         break;
     case 4:
-        view_jembrana();
+        view_jembrana();  //menampilkan tempat wisata di jembrana
         goto pilihan;
         break;
     case 5:
-        view_klungkung();
+        view_klungkung();  //menampilkan tempat wisata di klungkung
         goto pilihan;
         break;
     case 6:
-        view_gianyar();
+        view_gianyar();  //menampilkan tempat wisata di gianyar
         goto pilihan;
         break;
     case 7:
-        view_karangasem();
+        view_karangasem();  //menampilkan tempat wisata di karangasem
         goto pilihan;
         break;
     case 8:
-        view_bangli();
+        view_bangli();  //menampilkan tempat wisata di bangli
         goto pilihan;
         break;
     case 9:
-        view_buleleng_barat();
+        view_buleleng_barat();  //menampilkan tempat wisata di buleleng barat
         goto pilihan;
         break;
     case 10:
-        view_buleleng_timur();
+        view_buleleng_timur();  //menampilkan tempat wisata di buleleng timur
         goto pilihan;
         break;
     default:
@@ -72,7 +72,8 @@ pilihan:
     }
     clean();
 }
-void view_badung()
+
+void view_badung() //tampilan nama nama tempat wisata dan harga tiketnya di badung
 {
 
     point(6, 27);
@@ -98,7 +99,7 @@ void view_badung()
     point(6, 37);
     puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
-void view_denpasar()
+void view_denpasar() //tampilan nama nama tempat wisata dan harga tiketnya di denpasar
 {
 
     point(6, 27);
@@ -124,7 +125,7 @@ void view_denpasar()
     point(6, 37);
     puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
-void view_tabanan()
+void view_tabanan() //tampilan nama nama tempat wisata dan harga tiketnya di tabanan
 {
 
     point(6, 27);
@@ -150,7 +151,7 @@ void view_tabanan()
     point(6, 37);
     puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
-void view_jembrana()
+void view_jembrana() //tampilan nama nama tempat wisata dan harga tiketnya di jembrana
 {
 
     point(6, 27);
@@ -176,7 +177,7 @@ void view_jembrana()
     point(6, 37);
     puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
-void view_klungkung()
+void view_klungkung() //tampilan nama nama tempat wisata dan harga tiketnya di klungkung
 {
 
     point(6, 27);
@@ -202,7 +203,7 @@ void view_klungkung()
     point(6, 37);
     puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
-void view_gianyar()
+void view_gianyar() //tampilan nama nama tempat wisata dan harga tiketnya di gianyar
 {
 
     point(6, 27);
@@ -228,7 +229,7 @@ void view_gianyar()
     point(6, 37);
     puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
-void view_karangasem()
+void view_karangasem() //tampilan nama nama tempat wisata dan harga tiketnya di karangasem
 {
 
     point(6, 27);
@@ -254,7 +255,7 @@ void view_karangasem()
     point(6, 37);
     puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
-void view_bangli()
+void view_bangli() //tampilan nama nama tempat wisata dan harga tiketnya di bangli
 {
 
     point(6, 27);
@@ -280,7 +281,7 @@ void view_bangli()
     point(6, 37);
     puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
-void view_buleleng_barat()
+void view_buleleng_barat() //tampilan nama nama tempat wisata dan harga tiketnya di buleleng barat
 {
 
     point(6, 27);
@@ -306,7 +307,7 @@ void view_buleleng_barat()
     point(6, 37);
     puts("+-----------------------------------------------------------------------------------------------------------------------------------------------------------+");
 }
-void view_buleleng_timur()
+void view_buleleng_timur() //tampilan nama nama tempat wisata dan harga tiketnya di buleleng timur
 {
 
     point(6, 27);
