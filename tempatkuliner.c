@@ -1,4 +1,4 @@
-void input_tempatmakan()
+void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
 {
     proses_menu();
     point(53, 15);
@@ -23,13 +23,13 @@ void input_tempatmakan()
     printf("Input kode kabupaten yang ingin kamu kunjung : ");
     scanf("%d", &kabupaten);
     clean();
-    if (kabupaten == 1)
+    if (kabupaten == 1) //jika memilih kode 1 maka akan menampilkan tempat makan yang ada di badung
     {
         proses_menu();
         point(60, 15);
         puts("================================================");
         point(60, 16);
-        puts("|                    BADUNG                    |");
+        puts("|                    Badung                    |");
         point(60, 17);
         puts("================================================");
         point(60, 18);
@@ -51,13 +51,13 @@ void input_tempatmakan()
         printf("Ketikkan harga yang dipilih : ");
         scanf("%d", &harga);
     }
-    else if (kabupaten == 2)
+    else if (kabupaten == 2) //jika memilih kode 2 maka akan menampilkan tempat makan yang ada di denpasar
     {
         proses_menu();
         point(60, 15);
         puts("================================================");
         point(60, 16);
-        puts("|                   DENPASAR                  | ");
+        puts("|                   Denpasar                  | ");
         point(60, 17);
         puts("================================================");
         point(60, 18);
@@ -79,13 +79,13 @@ void input_tempatmakan()
         printf("Ketikkan harga yang dipilih : ");
         scanf("%d", &harga);
     }
-    else if (kabupaten == 3)
+    else if (kabupaten == 3) //jika memilih kode 3 maka akan menampilkan tempat makan yang ada di gianyar
     {
         proses_menu();
         point(60, 15);
         puts("================================================");
         point(60, 16);
-        puts("|                    GIANYAR                   |");
+        puts("|                    Gianyar                   |");
         point(60, 17);
         puts("================================================");
         point(60, 18);
@@ -107,13 +107,13 @@ void input_tempatmakan()
         printf("Ketikkan harga yang dipilih : ");
         scanf("%d", &harga);
     }
-    else if (kabupaten == 4)
+    else if (kabupaten == 4) //jika memilih kode 4 maka akan menampilkan tempat makan yang ada di klungkung
     {
         proses_menu();
         point(60, 15);
         puts("=================================================");
         point(60, 16);
-        puts("|                   KLUNGKUNG                   |");
+        puts("|                   Klungkung                   |");
         point(60, 17);
         puts("=================================================");
         point(60, 18);
@@ -135,13 +135,13 @@ void input_tempatmakan()
         printf("Ketikkan harga yang dipilih : ");
         scanf("%d", &harga);
     }
-    else if (kabupaten == 5)
+    else if (kabupaten == 5) //jika memilih kode 5 maka akan menampilkan tempat makan yang ada di bangli
     {
         proses_menu();
         point(60, 15);
         puts("=================================================");
         point(60, 16);
-        puts("|                    BANGLI                     |");
+        puts("|                    Bangli                     |");
         point(60, 17);
         puts("=================================================");
         point(60, 18);
@@ -163,13 +163,13 @@ void input_tempatmakan()
         printf("Ketikkan harga yang dipilih : ");
         scanf("%d", &harga);
     }
-    else if (kabupaten == 6)
+    else if (kabupaten == 6) //jika memilih kode 6 maka akan menampilkan tempat makan yang ada di jembrana
     {
         proses_menu();
         point(60, 15);
         puts("=================================================");
         point(60, 16);
-        puts("|                   JEMBRANA                    |");
+        puts("|                   Jembrana                    |");
         point(60, 17);
         puts("=================================================");
         point(60, 18);
@@ -191,13 +191,13 @@ void input_tempatmakan()
         printf("Ketikkan harga yang dipilih : ");
         scanf("%d", &harga);
     }
-    else if (kabupaten == 7)
+    else if (kabupaten == 7) //jika memilih kode 7 maka akan menampilkan tempat makan yang ada di karangasem
     {
         proses_menu();
         point(60, 15);
         puts("=================================================");
         point(60, 16);
-        puts("|                   KARANGASEM                  |");
+        puts("|                   Karangasem                  |");
         point(60, 17);
         puts("=================================================");
         point(60, 18);
@@ -219,13 +219,13 @@ void input_tempatmakan()
         printf("Ketikkan harga yang dipilih : ");
         scanf("%d", &harga);
     }
-    else if (kabupaten == 8)
+    else if (kabupaten == 8) //jika memilih kode 8 maka akan menampilkan tempat makan yang ada di tabanan
     {
         proses_menu();
         point(60, 15);
         puts("=================================================");
         point(60, 16);
-        puts("|                    TABANAN                    |");
+        puts("|                    Tabanan                    |");
         point(60, 17);
         puts("=================================================");
         point(60, 18);
@@ -247,13 +247,13 @@ void input_tempatmakan()
         printf("Ketikkan harga yang dipilih : ");
         scanf("%d", &harga);
     }
-    else if (kabupaten == 9)
+    else if (kabupaten == 9) //jika memilih kode 9 maka akan menampilkan tempat makan yang ada di buleleng barat
     {
         proses_menu();
         point(60, 15);
         puts("=================================================");
         point(60, 16);
-        puts("|                 BULELENG BARAT                |");
+        puts("|                 Buleleng Barat                |");
         point(60, 17);
         puts("=================================================");
         point(60, 18);
@@ -275,13 +275,13 @@ void input_tempatmakan()
         printf("Ketikkan harga yang dipilih : ");
         scanf("%d", &harga);
     }
-    else if (kabupaten == 10)
+    else if (kabupaten == 10) //jika memilih kode 10 maka akan menampilkan tempat makan yang ada di buleleng timur
     {
         proses_menu();
         point(60, 15);
         puts("=================================================");
         point(60, 16);
-        puts("|                 BULELENG TIMUR                |");
+        puts("|                 Buleleng Timur                |");
         point(60, 17);
         puts("=================================================");
         point(60, 18);
