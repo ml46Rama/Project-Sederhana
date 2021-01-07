@@ -1,4 +1,4 @@
-void pilihPaket(sign_up mhs)
+void pilihPaket(sign_up mhs) //tampilan fitur pemilihan paket
 {
     proses_menu();
     point(45, 16);
