@@ -1,69 +1,83 @@
-#include <stdio.h>
-#include <string.h>
-typedef char string[100]; //untuk mengubah tipe data char agar dirubah menjadi string
-
-typedef struct
+sign_up masuk_akun(sign_up mhs) //user disuruh masuk dulu untuk membuat akun, seperti input nama, password serta umur
 {
-    string nama;
-    string password;
-} login;
-typedef struct
-{
-    int umur;
-    login psw;
-} sign_in;
-
-sign_in masuk_akun(sign_in mhs) //user disuruh masuk dulu untuk membuat akun, seperti input nama, password serta umur
-{
-    puts("Untuk pertama kali masuk anda harus sign-in terlebih dahulu");
-    printf("\nmasukkan umur anda        :"); //fungsi umur nanti akan berkaitan dengan harga tiket
-    scanf("%d", &mhs.umur);
-    printf("\nmasukkan nama             :");
+    point(52, 15);
+    puts("^=================================================================^");
+    point(52, 16);
+    puts("|                                                                 |");
+    point(52, 17);
+    puts("|                        SELAMAT DATANG                           |");
+    point(52, 18);
+    puts("|                         PADA PROGRAM                            |");
+    point(52, 19);
+    puts("|                     CHOOSE YOUR VACATION                        |");
+    point(52, 20);
+    puts("|                                                                 |");
+    point(52, 21);
+    puts("+=================================================================+");
+    point(52, 22);
+    puts("|  Untuk pertama kali masuk anda harus sign-in terlebih dahulu!   |");
+    point(52, 23);
+    puts("+-----------------------------------------------------------------+");
+    point(52, 24);
+    printf(" Masukkan umur anda        : "); //fungsi umur nanti akan berkaitan dengan harga tiket
+    scanf("%d", &umur);
+    point(52, 25);
+    printf(" Masukkan nama             : ");
     getchar();
-    gets(mhs.psw.nama);
-    printf("\nmasukkan password anda    :");
-    scanf("%s", &mhs.psw.password);
+    gets(mhs.nama);
+    point(52, 26);
+    printf(" Masukkan password anda    : ");
+    scanf("%s", &mhs.password);
+
+    clean();
     return mhs;
 }
-void tampil_login(login psw, sign_in mhs)
+
+sign_up menu_login(sign_up mhs)
 {
-    printf("\n      umur anda                 :%d", mhs.umur);
-    printf("\n      nama akun anda            :%s", psw.nama);
-    printf("\n      password anda             :%9s", psw.password);
-}
-login menu(login psw, sign_in mhs)
-{
+    proses_menu();
 pilihan:
-    puts("\n Anda harus memasukkan kembali nama dan password untuk vertifikasi");
-    printf("\n\nMasukkan nama anda      :");
+    point(48, 15);
+    puts("^======================================================================^");
+    point(48, 16);
+    puts("|                                                                      |");
+    point(48, 17);
+    puts("|                             -VERFIKASI-                              |");
+    point(48, 18);
+    puts("|                                                                      |");
+    point(48, 19);
+    puts("+======================================================================+");
+    point(48, 20);
+    puts("|   Anda harus memasukkan kembali nama dan password untuk verifikasi   |");
+    point(48, 21);
+    puts("+----------------------------------------------------------------------+");
+    point(48, 22);
+    printf(" Masukkan nama anda      : ");
     getchar();
-    gets(psw.nama);
-    printf("\n\nmasukkan password       :");
-    scanf("%9s", &psw.password);
-    if (strcmp(mhs.psw.nama, psw.nama) != 0)//memanfaatkan string untunk membandingkan dua string apakah sama atau tidak
+    gets(mhs.nama1);
+    point(48, 23);
+    printf(" Masukkan password       : ");
+    scanf("%9s", &mhs.password1);
+
+    if (strcmp(mhs.nama1, mhs.nama) != 0)
     {
-        printf("error, masukkan nama dan password anda dengan benar!!!!");//menggunakan strcmp bernilai 0 berarti kedua string sama
+        point(48, 25);
+        printf("error, masukkan nama dan password anda dengan benar!!!\n");
+        clean();
         goto pilihan;
     }
-    else if (strcmp(mhs.psw.password, psw.password) != 0)
+    else if (strcmp(mhs.password1, mhs.password) != 0)
     {
-        printf("error, masukkan nama dan password anda dengan benar!!!!");
+        point(48, 25);
+        printf("error, masukkan nama dan password anda dengan benar!!!\n");
+        clean();
         goto pilihan;
     }
     else
     {
-        printf("benar, selamat");
+        clean();
+        menu_cys(mhs);
     }
-    return psw;
-}
-
-int main()
-{
-
-    sign_in mhs;
-    mhs = masuk_akun(mhs);
-    login psw;
-    psw = menu(psw, mhs);
-    tampil_login(psw, mhs);
-    return 0;
+    clean();
+    return mhs;
 }
