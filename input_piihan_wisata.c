@@ -1,38 +1,38 @@
 int input_data()  //user menginput nama nama kabupaten yang ingin dituju
 {
 
-    proses_menu();
+    proses_menu(); //memanggil fungsi proses menu
     switch (kabupaten)
     {
     case 1:
-        view_badung();
+        view_badung(); //memanggil fungsi view badung
         break;
     case 2:
-        view_denpasar();
+        view_denpasar(); //memanggil fungsi view denpasar
         break;
     case 3:
-        view_tabanan();
+        view_tabanan(); //memanggil fungsi view tabanan
         break;
     case 4:
-        view_jembrana();
+        view_jembrana(); //memanggil fungsi view jembrana
         break;
     case 5:
-        view_klungkung();
+        view_klungkung(); //memanggil fungsi view klungkung
         break;
     case 6:
-        view_gianyar();
+        view_gianyar(); //memanggil fungsi view gianyar
         break;
     case 7:
-        view_karangasem();
+        view_karangasem(); //memanggil fungsi view karangasem
         break;
     case 8:
-        view_bangli();
+        view_bangli(); //memanggil fungsi view bangli
         break;
     case 9:
-        view_buleleng_barat();
+        view_buleleng_barat(); //memanggil fungsi view buleleng barat
         break;
     case 10:
-        view_buleleng_timur();
+        view_buleleng_timur(); //memanggil fungsi view buleleng timur
         break;
     default:
         break;
@@ -40,7 +40,7 @@ int input_data()  //user menginput nama nama kabupaten yang ingin dituju
 
     point(6, 39);
     printf("Berapa tempat wisata yang ingin anda kunjungi (max 5)  : "); //menginput maksimal 5 tempat tujuan
-    scanf("%d", &N);
+    scanf("%d", &N); //menyimpan data pada variabel N
     point(6, 40);
     printf("Masukkan pilihan anda : ");
 
@@ -51,7 +51,7 @@ int input_data()  //user menginput nama nama kabupaten yang ingin dituju
         fgets(n[i], 10000, stdin); //fgets untuk membaca string dari file sampai ditemukannya karakter baris baru
     }
 
-    clean();
+    clean(); //membersihkan tampilan layar
     return 0;
 }
 void tampilkan() //menampilkan data yang telah user input
@@ -67,7 +67,7 @@ void tampilkan() //menampilkan data yang telah user input
 
     for (i = 0; i <= N; i++)
     {
-        free(n[i]);
+        free(n[i]); //membebaskan memori yang telah dipakai dalam fungsi malloc()
 
     }
 
