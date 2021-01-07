@@ -28,16 +28,16 @@ int input_jarak(int jarak, int kendaraan, int bbm) //menampilkan jarak tempat wi
     if (kendaraan == 1) //jika memilih mobil
     {
         if (bbm == 1)
-            bensin = (jarak * KONS * PERTALITE) / K_MOBIL;
+            bensin = (jarak * KONS * PERTALITE) / K_MOBIL; //menghitung biaya harga bensin pertalite jika menggunakan mobil
         else if (bbm == 2)
-            bensin = (jarak * KONS * PERTAMAX) / K_MOBIL;
+            bensin = (jarak * KONS * PERTAMAX) / K_MOBIL; //menghitung biaya harga bensin pertamax jika menggunakan mobil
     }
     else if (kendaraan == 2) //jika memilih motor
     {
         if (bbm == 1)
-            bensin = (jarak * KONS * PERTALITE) / K_MOTOR;
+            bensin = (jarak * KONS * PERTALITE) / K_MOTOR; //menghitung biaya harga bensin pertalite jika menggunakan motor
         else if (bbm == 2)
-            bensin = (jarak * KONS * PERTAMAX) / K_MOTOR;
+            bensin = (jarak * KONS * PERTAMAX) / K_MOTOR; //menghitung biaya harga bensin pertamax jika menggunakan motor
     }
     else
         printf("salah!");
