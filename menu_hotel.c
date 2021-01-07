@@ -1,10 +1,10 @@
-void fungsi_hotel()
+void fungsi_hotel() //user menentukan apakah ingin menginap disebuah hotel
 {
     proses_menu();
     point(65, 15);
     puts("=======================================================");
     point(65, 16);
-    puts("|                   PESAN PENGINAPAN                  |");
+    puts("|                       FUNGSI HOTEL                  |");
     point(65, 17);
     puts("=======================================================");
     point(65, 18);
@@ -28,14 +28,14 @@ void fungsi_hotel()
     }
 }
 
-int jenis_hotel()
+int jenis_hotel() //menampilkan jenis - jenis hotel dan daftar nama - nama hotelnya
 {
     proses_menu();
     int pilihan_penginapan;
     point(68, 15);
     puts("=============================================");
     point(68, 16);
-    puts("|        JENIS PENGINAPAN                   |");
+    puts("|             JENIS HOTEL                   |");
     point(68, 17);
     puts("=============================================");
     point(68, 18);
@@ -49,15 +49,15 @@ int jenis_hotel()
     point(68, 22);
     puts("=============================================");
     point(68, 23);
-    printf(" Jenis hotel apa yang anda inginkan ?  :");
+    printf("jenis hotel apa yang anda inginkan  :");
     scanf("%d", &b);
     point(68, 24);
-    printf(" Anda ingin menginap berapa hari ? : ");
+    printf("anda ingin menginap berapa lama :");
     scanf("%d", &lama);
     point(68, 25);
-    printf(" Bila anda memilih villa, ketikkan 1 atau 2 (1 villa berkapasitas 5 orang)");
+    printf("Bila anda memilih villa input 1 atau 2 (1 villa berkapasitas 5 orang)");
     point(68, 26);
-    printf(" Anda ingin pesan untuk berapa orang (kecuali vila)   : ");
+    printf("anda ingin pesan untuk berapa orang(kecuali vila)   :");
     scanf("%d", &c);
     clean();
 
@@ -66,7 +66,7 @@ int jenis_hotel()
         point(72, 15);
         puts("===============================");
         point(72, 16);
-        puts("|      DAFTAR HOME STAY       |");
+        puts("|      DAFTAR HOME STAY       |"); //menampilkan nama - nama homestay dan harga - harga homestay
         point(72, 17);
         puts("===============================");
         point(72, 18);
@@ -92,7 +92,7 @@ int jenis_hotel()
         point(72, 28);
         puts("===============================");
         point(72, 29);
-        printf("Dimana anda ingin menginap? :");
+        printf("dimana anda ingin menginap? :");
         scanf("%d", &pilihan_penginapan);
         if (pilihan_penginapan == 1)
         {
@@ -140,7 +140,7 @@ int jenis_hotel()
         point(72, 15);
         puts("===================================");
         point(72, 16);
-        puts("|      DAFTAR HOTEL BINTANG 3     |");
+        puts("|      DAFTAR HOTEL BINTANG 3     |"); //menampilkan nama - nama hotel bintang 3 dan harga - harga hotel bintang 3
         point(72, 17);
         puts("===================================");
         point(72, 18);
@@ -166,7 +166,7 @@ int jenis_hotel()
         point(72, 28);
         puts("===================================");
         point(72, 29);
-        printf("Dimana anda ingin menginap? :");
+        printf("dimana anda ingin menginap? :");
         scanf("%d", &pilihan_penginapan);
         if (pilihan_penginapan == 1)
         {
@@ -214,7 +214,7 @@ int jenis_hotel()
         point(72, 15);
         puts("=================================");
         point(72, 16);
-        puts("|     DAFTAR HOTEL BINTANG 5    |");
+        puts("|     DAFTAR HOTEL BINTANG 5    |"); //menampilkan nama - nama hotel bintang 5 dan harga - harga hotel bintang 5
         point(72, 17);
         puts("=================================");
         point(72, 18);
@@ -240,7 +240,7 @@ int jenis_hotel()
         point(72, 28);
         puts("=================================");
         point(72, 29);
-        printf("Dimana anda ingin menginap? :");
+        printf("dimana anda ingin menginap? :");
         scanf("%d", &pilihan_penginapan);
         if (pilihan_penginapan == 1)
         {
@@ -288,7 +288,7 @@ int jenis_hotel()
         point(72, 15);
         puts("==============================");
         point(72, 16);
-        puts("|         DAFTAR VILLA       |");
+        puts("|         DAFTAR VILLA       |"); //menampilkan nama - nama daftar villa dan harga - harga daftar villa
         point(72, 17);
         puts("==============================");
         point(72, 18);
@@ -314,7 +314,7 @@ int jenis_hotel()
         point(72, 28);
         puts("==============================");
         point(72, 29);
-        printf("Dimana anda ingin menginap? :");
+        printf("dimana anda ingin menginap? :");
         scanf("%d", &pilihan_penginapan);
         if (pilihan_penginapan == 1)
         {
