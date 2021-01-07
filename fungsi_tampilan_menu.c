@@ -1,6 +1,6 @@
 int menu_cys(sign_up mhs) //menampilkan beberapa main fitur dari program choose your vacation
 {
-    proses_menu();
+    proses_menu(); //memanggil fungsi proses menu
 menu:
     point(52, 15);
     puts("=============================================================");
@@ -40,22 +40,22 @@ menu:
     puts("=============================================================");
     point(52, 34);
     printf("Masukkan pilihan anda : ");
-    scanf("%d", &pilihan_program);
-    clean();
+    scanf("%d", &pilihan_program); //menyimpan data pada variabel pilihan_program
+    clean(); //membersihkan tampilan layar
     switch (pilihan_program)
     {
 
     case 1:
         pilihan_kabupaten(); //menuju fungsi untuk melihat daftar tempat int
-        clean();
+        clean(); //membersihkan tampilan layar
         goto menu;
         break;
 
     case 2:
         proses_menu();    //menuju menu fitur-fitur dari program chose your vacation
-        tampilan_pilihan_kabupaten();
+        tampilan_pilihan_kabupaten(); //memanggil fungsi tampilan pilihan kabupaten
         menu_inputan(mhs);      //tampilan menu menu inputan
-        clean();
+        clean(); //membersihkan tampilan layar
         goto menu;
         break;
 
@@ -73,7 +73,7 @@ menu:
 }
 int menu_inputan(sign_up mhs) //untuk menampilkan fitur menu inputan
 {
-    proses_menu();
+    proses_menu(); //memanggil fungsi proses menu
 inputan:
     point(45, 16);
     puts("===========================================================================");
@@ -97,60 +97,60 @@ inputan:
     puts("===========================================================================");
     point(45, 26);
     printf("Masukkan inputan yang anda inginkan : ");
-    scanf("%d", &pilihan_menu);
-    clean();
+    scanf("%d", &pilihan_menu); //menyimpan data pada variabel pilihan_menu
+    clean(); //membersihkan tampilan layar
 
     switch (pilihan_menu)
     {
     case 1:
         input_data();   //user menginput tempat wisata yang ingin dituju (maksimal 5)
-        proses_menu();
+        proses_menu(); //menuju menu fitur-fitur dari program chose your vacation
         goto inputan;
         break;
     case 2:
         tiket_masuk(); //user menginput tempat tujuan dan harga tiket
-        clean();
-        proses_menu();
+        clean(); //membersihkan tampilan layar
+        proses_menu(); //menuju menu fitur-fitur dari program chose your vacation
         goto inputan;
         break;
 
     case 3:
         input_tempatmakan(); //user menginput nama nama tempat makan yang disediakan
-        clean();
-        proses_menu();
+        clean(); //membersihkan tampilan layar
+        proses_menu(); //menuju menu fitur-fitur dari program chose your vacation
         goto inputan;
         break;
 
     case 4:
         int_guide(jumlah_guide, jam_guide); //user menginput penyewaan guide
-        clean();
-        proses_menu();
+        clean(); //membersihkan tampilan layar
+        proses_menu(); //menuju menu fitur-fitur dari program chose your vacation
         goto inputan;
         break;
 
     case 5:
         pilihanint(); //user menginput penyewaan mobil
-        clean();
-        proses_menu();
+        clean(); //membersihkan tampilan layar
+        proses_menu(); //menuju menu fitur-fitur dari program chose your vacation
         goto inputan;
         break;
 
     case 6:
         input_jarak(jarak, kendaraan, bbm); //user menginput jarak dan bensin yang kira kira digunakan
-        clean();
-        proses_menu();
+        clean(); //membersihkan tampilan layar
+        proses_menu(); //menuju menu fitur-fitur dari program chose your vacation
         goto inputan;
         break;
 
     case 7:
         fungsi_hotel(); //user menginput penyewaan hotel
-        clean();
-        proses_menu();
+        clean(); //membersihkan tampilan layar
+        proses_menu(); //menuju menu fitur-fitur dari program chose your vacation
         goto inputan;
         break;
     case 8:
         tampilkan(); //user dapat melihat tampilan data yang sudah diinput
-        tampilkan_data(mhs);
+        tampilkan_data(mhs);  //memanggil funsgi tampilkan_data
         break;
     case 9:
         penutup(); //user diarahkan menuju keluar dari program
@@ -159,5 +159,5 @@ inputan:
     default:
         break;
     }
-    clean();
+    clean(); //membersihkan tampilan layar
 }
