@@ -1,20 +1,45 @@
-feeling input_jarak(feeling fl, program call[], sewa sw)
+int input_jarak(int jarak, int kendaraan, int bbm)
 {
-    if (sw.ask== 0)
+    proses_menu();
+    point(55, 15);
+    puts("=============================================================================");
+    point(55, 16);
+    puts("|                               JARAK & MOBIL                               |");
+    point(55, 17);
+    puts("=============================================================================");
+    point(55, 18);
+    printf("|     Cek jarak tempuh di google maps dan sesuaikan dengan kendaraan anda    |");
+    point(55, 19);
+    puts("=============================================================================");
+    point(55, 20);
+    printf(" Ketikkan perkiraan jarak tempat anda sekarang ke tujuan  : ");
+    scanf("%d", &jarak);
+    point(55, 21);
+    printf("          1. Mobil             |||                     2. Motor            ");
+    point(55, 22);
+    printf(" Ketikkan kode kendaraan yang anda pergunakan             : ");
+    scanf("%d", &kendaraan);
+    point(55, 23);
+    printf("        1. Pertalite           |||                  2. Pertamax            ");
+    point(55, 24);
+    printf(" Ketikkan kode bahan bakar yang anda pergunakan           : ");
+    scanf("%d", &bbm);
+
+    if (kendaraan == 1)
     {
-        printf("\n anda dapat mengecek di google maps dan sesuaikan dengan kendaraan anda");
-        printf("\n masukkan perkiraan jarak tempat anda sekarang ke tujuan :");
-        scanf("%f", &fl.jarak);
-        printf("\n1.mobil\n2. motor");
-        printf("\n Kendaraan yang di pakai      :");
-        scanf("%d", &fl.kendaraan);
-        if (fl.kendaraan == 1)
-        {
-            fl.jarak_wisata_mobil = fl.jarak * 2 / 19; //jika memakai mobil
-        }
-        else if (fl.kendaraan == 2)
-        {
-            fl.jarak_wisata_motor = fl.jarak * 2 / 37; //jika memakai motor
-        }
+        if (bbm == 1)
+            bensin = (jarak * KONS * PERTALITE) / K_MOBIL;
+        else if (bbm == 2)
+            bensin = (jarak * KONS * PERTAMAX) / K_MOBIL;
     }
+    else if (kendaraan == 2)
+    {
+        if (bbm == 1)
+            bensin = (jarak * KONS * PERTALITE) / K_MOTOR;
+        else if (bbm == 2)
+            bensin = (jarak * KONS * PERTAMAX) / K_MOTOR;
+    }
+    else
+        printf("salah!");
+    clean();
 }
