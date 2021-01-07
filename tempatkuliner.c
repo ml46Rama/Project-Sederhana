@@ -1,6 +1,6 @@
 void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
 {
-    proses_menu();
+    proses_menu(); //memanggil fungsi proses menu
     point(53, 15);
     puts("=======================================================");
     point(53, 16);
@@ -21,11 +21,11 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
     puts("=======================================================");
     point(53, 24);
     printf("Input kode kabupaten yang ingin kamu kunjung : ");
-    scanf("%d", &kabupaten);
+    scanf("%d", &kabupaten); //menyimpan data pada variabel kabupaten
     clean();
     if (kabupaten == 1) //jika memilih kode 1 maka akan menampilkan tempat makan yang ada di badung
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("================================================");
         point(60, 16);
@@ -53,7 +53,7 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
     }
     else if (kabupaten == 2) //jika memilih kode 2 maka akan menampilkan tempat makan yang ada di denpasar
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("================================================");
         point(60, 16);
@@ -81,7 +81,7 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
     }
     else if (kabupaten == 3) //jika memilih kode 3 maka akan menampilkan tempat makan yang ada di gianyar
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("================================================");
         point(60, 16);
@@ -102,14 +102,14 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
         puts("================================================");
         point(60, 24);
         printf("Ketikkan kode pilihan anda  : ");
-        scanf("%d", &makan);
+        scanf("%d", &makan); //menyimpan data pada variabel makan
         point(60, 25);
         printf("Ketikkan harga yang dipilih : ");
-        scanf("%d", &harga);
+        scanf("%d", &harga); //menyimpan data pada variabel harga
     }
     else if (kabupaten == 4) //jika memilih kode 4 maka akan menampilkan tempat makan yang ada di klungkung
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("=================================================");
         point(60, 16);
@@ -130,14 +130,14 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
         puts("=================================================");
         point(60, 24);
         printf("Ketikkan kode pilihan anda  : ");
-        scanf("%d", &makan);
+        scanf("%d", &makan); //menyimpan data pada variabel makan
         point(60, 25);
         printf("Ketikkan harga yang dipilih : ");
-        scanf("%d", &harga);
+        scanf("%d", &harga); //menyimpan data pada variabel harga
     }
     else if (kabupaten == 5) //jika memilih kode 5 maka akan menampilkan tempat makan yang ada di bangli
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("=================================================");
         point(60, 16);
@@ -158,14 +158,14 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
         puts("=================================================");
         point(60, 24);
         printf("Ketikkan kode pilihan anda  : ");
-        scanf("%d", &makan);
+        scanf("%d", &makan); //menyimpan data pada variabel makan
         point(60, 25);
         printf("Ketikkan harga yang dipilih : ");
-        scanf("%d", &harga);
+        scanf("%d", &harga); //menyimpan data pada variabel makan
     }
     else if (kabupaten == 6) //jika memilih kode 6 maka akan menampilkan tempat makan yang ada di jembrana
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("=================================================");
         point(60, 16);
@@ -186,14 +186,14 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
         puts("=================================================");
         point(60, 24);
         printf("Ketikkan kode pilihan anda  : ");
-        scanf("%d", &makan);
+        scanf("%d", &makan); //menyimpan data pada variabel makan
         point(60, 25);
         printf("Ketikkan harga yang dipilih : ");
-        scanf("%d", &harga);
+        scanf("%d", &harga); //menyimpan data pada variabel makan
     }
     else if (kabupaten == 7) //jika memilih kode 7 maka akan menampilkan tempat makan yang ada di karangasem
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("=================================================");
         point(60, 16);
@@ -214,14 +214,14 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
         puts("=================================================");
         point(60, 24);
         printf("Ketikkan kode pilihan anda  : ");
-        scanf("%d", &makan);
+        scanf("%d", &makan); //menyimpan data pada variabel makan
         point(60, 25);
         printf("Ketikkan harga yang dipilih : ");
-        scanf("%d", &harga);
+        scanf("%d", &harga); //menyimpan data pada variabel makan
     }
     else if (kabupaten == 8) //jika memilih kode 8 maka akan menampilkan tempat makan yang ada di tabanan
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("=================================================");
         point(60, 16);
@@ -242,14 +242,14 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
         puts("=================================================");
         point(60, 24);
         printf("Ketikkan kode pilihan anda  : ");
-        scanf("%d", &makan);
+        scanf("%d", &makan); //menyimpan data pada variabel harga
         point(60, 25);
         printf("Ketikkan harga yang dipilih : ");
-        scanf("%d", &harga);
+        scanf("%d", &harga); //menyimpan data pada variabel makan
     }
     else if (kabupaten == 9) //jika memilih kode 9 maka akan menampilkan tempat makan yang ada di buleleng barat
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("=================================================");
         point(60, 16);
@@ -270,14 +270,14 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
         puts("=================================================");
         point(60, 24);
         printf("Ketikkan kode pilihan anda  : ");
-        scanf("%d", &makan);
+        scanf("%d", &makan); //menyimpan data pada variabel makan
         point(60, 25);
         printf("Ketikkan harga yang dipilih : ");
-        scanf("%d", &harga);
+        scanf("%d", &harga); //menyimpan data pada variabel harga
     }
     else if (kabupaten == 10) //jika memilih kode 10 maka akan menampilkan tempat makan yang ada di buleleng timur
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 15);
         puts("=================================================");
         point(60, 16);
@@ -298,16 +298,16 @@ void input_tempatmakan() //menampilkan tempat-tempat makan yang telah disediakan
         puts("=================================================");
         point(60, 24);
         printf("Ketikkan kode pilihan anda  : ");
-        scanf("%d", &makan);
+        scanf("%d", &makan); //menyimpan data pada variabel makan
         point(60, 25);
         printf("Ketikkan harga yang dipilih : ");
-        scanf("%d", &harga);
+        scanf("%d", &harga); //menyimpan data pada variabel harga
     }
     else
     {
-        proses_menu();
+        proses_menu(); //memanggil fungsi proses menu
         point(60, 25);
         printf(" Input yang anda masukkan salah!");
     }
-    clean();
+    clean(); //membersihkan tampilan layar
 }
