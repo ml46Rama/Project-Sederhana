@@ -2,10 +2,10 @@ int writeKuitansi(sign_up mhs) //mencetak data - data fitur yang telah diinput o
 {
     time_t waktuSekarang; //tanggal user menginput data
     time(&waktuSekarang);
-    struct tm *waktuUser = localtime(&waktuSekarang);
+    struct tm *waktuUser = localtime(&waktuSekarang); //mengakses waktu sesuai perangkat user
 
     FILE *pr;
-    pr = fopen("KwitansiPembayaran.txt", "a+");
+    pr = fopen("KwitansiPembayaran.txt", "a+"); //menggunakan operasi file a+ yang berguna untuk dibaca dan ditambahkan isinya
     fprintf(pr, "\n==================================================================");
     fprintf(pr, "\n|-----------------------Kuitansi Pembayaran----------------------|");
     fprintf(pr, "\n==================================================================");
@@ -13,12 +13,12 @@ int writeKuitansi(sign_up mhs) //mencetak data - data fitur yang telah diinput o
     fprintf(pr, "\n|user atas nama %s                                                 \n", mhs.nama);
     fprintf(pr, "\n|                                                                ");
     fprintf(pr, "\n|Total Pembayaran                                                ");
-    fprintf(pr, "\n|Untuk tempat makan memakan biaya               : %d             ", harga);
-    fprintf(pr, "\n|Untuk menyewa guide memakan biaya              : %d             ", jumlah_int);
-    fprintf(pr, "\n|Untuk menyewa mobil memakan biaya              : %d             ", hargaint);
-    fprintf(pr, "\n|Untuk estimasi bensin memakan biaya            : %d             ", bensin);
-    fprintf(pr, "\n|Untuk harga penginapan memakan biaya           : %d             ", harga_penginapan);
-    fprintf(pr, "\n|Untuk harga tiket masuk                        : %d             ", o * sum);
+    fprintf(pr, "\n|Untuk tempat makan memakan biaya               : %d             ", harga); //mengambil data dari variabel harga
+    fprintf(pr, "\n|Untuk menyewa guide memakan biaya              : %d             ", jumlah_int); //mengambil data dari variabel jumlah_int
+    fprintf(pr, "\n|Untuk menyewa mobil memakan biaya              : %d             ", hargaint); //mengambil data dari variabel hargaint
+    fprintf(pr, "\n|Untuk estimasi bensin memakan biaya            : %d             ", bensin); //mengambil data dari variabel bensin
+    fprintf(pr, "\n|Untuk harga penginapan memakan biaya           : %d             ", harga_penginapan); //mengambil data dari variabel harga_penginapan
+    fprintf(pr, "\n|Untuk harga tiket masuk                        : %d             ", o * sum); //mengambil data dari variabel o lalu dikalikan variabel sum
     fprintf(pr, "\n==================================================================");
     fprintf(pr, "\n|Total Perkiraan Jumlah Biaya Liburan           = %d             ", harga + jumlah_int + hargaint + bensin + harga_penginapan + (o * sum));
     fprintf(pr, "\n==================================================================");
@@ -34,10 +34,10 @@ int writeKuitansiPaket(sign_up mhs) //mencetak data - data paket yang telah diin
 {
     time_t waktuSekarang; //tanggal user menginput data
     time(&waktuSekarang);
-    struct tm *waktuUser = localtime(&waktuSekarang);
+    struct tm *waktuUser = localtime(&waktuSekarang); //mengakses waktu sesuai perangkat user
 
     FILE *pt;
-    pt = fopen("kwitansipaket.txt", "a+");
+    pt = fopen("kwitansipaket.txt", "a+"); //menggunakan operasi file a+ yang berguna untuk dibaca dan ditambahkan isinya
 
     fprintf(pt, "\n==================================================================");
     fprintf(pt, "\n|-----------------------Kuitansi Pembayaran----------------------|");
@@ -46,7 +46,7 @@ int writeKuitansiPaket(sign_up mhs) //mencetak data - data paket yang telah diin
     fprintf(pt, "||pemesanan atas nama %s                                           \n", mhs.nama);
 
     fprintf(pt, "||                                                                 \n");
-    fprintf(pt, "||Total Pembayaran           =  %d                                 \n", hp);
+    fprintf(pt, "||Total Pembayaran           =  %d                                 \n", hp); //mengambil data dari variabel hp
     fprintf(pt, "\n\t\t\t  -------------------------------------------------------------------");
     fprintf(pt, "\n\t\t\t +---Terima Kasih Telah Menggunakan Program Choose Your Vacation---+");
     fprintf(pt, "\n\t\t\t ***********************Selamat Berlibur****************************");
