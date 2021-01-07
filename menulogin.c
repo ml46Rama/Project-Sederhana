@@ -22,7 +22,7 @@ sign_up masuk_akun(sign_up mhs) //user disuruh masuk dulu untuk membuat akun, se
     printf(" Masukkan umur anda        : "); //fungsi umur nanti akan berkaitan dengan harga tiket
     scanf("%d", &umur);
     point(52, 25);
-    printf(" Masukkan nama             : ");
+    printf(" Masukkan nama             : "); //menginputkan nama user
     getchar();
     gets(mhs.nama);
     point(52, 26);
@@ -33,7 +33,7 @@ sign_up masuk_akun(sign_up mhs) //user disuruh masuk dulu untuk membuat akun, se
     return mhs;
 }
 
-sign_up menu_login(sign_up mhs)
+sign_up menu_login(sign_up mhs) //user akan disuruh memverifikasi dengan menginput nama dan password
 {
     proses_menu();
 pilihan:
@@ -58,7 +58,6 @@ pilihan:
     point(48, 23);
     printf(" Masukkan password       : ");
     scanf("%9s", &mhs.password1);
-
     if (strcmp(mhs.nama1, mhs.nama) != 0)
     {
         point(48, 25);
@@ -81,3 +80,4 @@ pilihan:
     clean();
     return mhs;
 }
+
