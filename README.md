@@ -1,4 +1,4 @@
-Repository ini merupakan tempat untuk melihat perkembangan project
+Repository ini merupakan tempat untuk melihat perkembangan project.
 
 CHOOSE YOUR VACATION
 
